@@ -1,5 +1,5 @@
 resource "aws_iam_role" "glue_crawler_role" {
-  name = "${var.name_prefix}GlueCrawlerRole"
+  name = "${local.name_prefix}GlueCrawlerRole"
 
 #  tags = var.resource_tags
 
@@ -23,7 +23,7 @@ EOF
 }
 
 resource "aws_iam_policy" "glue_crawler_policy" {
-  name        = "${var.name_prefix}GlueCrawlerPolicy"
+  name        = "${local.name_prefix}GlueCrawlerPolicy"
   description = "Policy for Glue role"
   path        = "/"
 
@@ -38,7 +38,7 @@ resource "aws_iam_policy" "glue_crawler_policy" {
                 "s3:PutObject"
             ],
             "Resource": [
-                "arn:aws:s3:::${var.s3_target_bucket_name}/*"
+                "arn:aws:s3:::${local.name_prefix}data-dump-bucket/hospitals/*"
             ]
         }
     ]
@@ -46,11 +46,13 @@ resource "aws_iam_policy" "glue_crawler_policy" {
 EOF
 }
 
+#attaches the custom crawler policy to the role
 resource "aws_iam_role_policy_attachment" "glue_crawler_policy_attachment" {
   role       = aws_iam_role.glue_crawler_role.name
   policy_arn = aws_iam_policy.glue_crawler_policy.arn
 }
 
+#assigns the AWSGlueServiceRole policy to the role created at the beginning of this script
 resource "aws_iam_role_policy_attachment" "glue_service_role_attachment" {
   role       = aws_iam_role.glue_crawler_role.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole"
