@@ -38,7 +38,7 @@ resource "aws_iam_policy" "glue_crawler_policy" {
                 "s3:PutObject"
             ],
             "Resource": [
-                "arn:aws:s3:::${local.name_prefix}data-dump-bucket/hospitals/*"
+                "arn:aws:s3:::${local.name_prefix}data-dump-bucket/*"
             ]
         }
     ]
