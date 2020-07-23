@@ -1,0 +1,3503 @@
+{
+    "objectIdFieldName": "OBJECTID",
+    "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+    },
+    "fields": [
+        {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HOSPITAL_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "Hospital Name",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HOSPITAL_TYPE",
+            "type": "esriFieldTypeString",
+            "alias": "Hospital Type",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_ADDRESS",
+            "type": "esriFieldTypeString",
+            "alias": "Address",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_ADDRESS1",
+            "type": "esriFieldTypeString",
+            "alias": "Address Ln2",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_CITY",
+            "type": "esriFieldTypeString",
+            "alias": "City",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_STATE",
+            "type": "esriFieldTypeString",
+            "alias": "State Abrv",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_ZIP_CODE",
+            "type": "esriFieldTypeString",
+            "alias": "Zip Code",
+            "sqlType": "sqlTypeOther",
+            "length": 20,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "COUNTY_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "County Name",
+            "sqlType": "sqlTypeOther",
+            "length": 32,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "STATE_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "State Name",
+            "sqlType": "sqlTypeOther",
+            "length": 35,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "STATE_FIPS",
+            "type": "esriFieldTypeString",
+            "alias": "State FIPS",
+            "sqlType": "sqlTypeOther",
+            "length": 2,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "CNTY_FIPS",
+            "type": "esriFieldTypeString",
+            "alias": "County FIPS",
+            "sqlType": "sqlTypeOther",
+            "length": 3,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "FIPS",
+            "type": "esriFieldTypeString",
+            "alias": "FIPS",
+            "sqlType": "sqlTypeOther",
+            "length": 5,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NUM_LICENSED_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of Licensed Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NUM_STAFFED_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of Staffed Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NUM_ICU_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of ICU Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ADULT_ICU_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of Adult ICU Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PEDI_ICU_BEDS",
+            "type": "esriFieldTypeSingle",
+            "alias": "# of Pediatric ICU Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "BED_UTILIZATION",
+            "type": "esriFieldTypeSingle",
+            "alias": "Bed Utilization Rate",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Potential_Increase_In_Bed_Capac",
+            "type": "esriFieldTypeInteger",
+            "alias": "Potential Increase in Bed Capacity",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AVG_VENTILATOR_USAGE",
+            "type": "esriFieldTypeSingle",
+            "alias": "Average Ventilator Usage",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "OBJECTID": 585,
+                "HOSPITAL_NAME": "Platte Valley Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1600 Prairie Center Pkwy",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Brighton",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80601",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 98,
+                "NUM_STAFFED_BEDS": 89,
+                "NUM_ICU_BEDS": 8,
+                "ADULT_ICU_BEDS": 8,
+                "PEDI_ICU_BEDS": 16,
+                "BED_UTILIZATION": 0.3365245,
+                "Potential_Increase_In_Bed_Capac": 9,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.76863899999995,
+                "y": 39.963935400000025
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 586,
+                "HOSPITAL_NAME": "UCHealth University of Colorado Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "12605 E 16th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80045",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 698,
+                "NUM_STAFFED_BEDS": 650,
+                "NUM_ICU_BEDS": 144,
+                "ADULT_ICU_BEDS": 144,
+                "PEDI_ICU_BEDS": 50,
+                "BED_UTILIZATION": 0.8355469,
+                "Potential_Increase_In_Bed_Capac": 48,
+                "AVG_VENTILATOR_USAGE": 20
+            },
+            "geometry": {
+                "x": -104.84202879999998,
+                "y": 39.742629400000055
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 587,
+                "HOSPITAL_NAME": "North Suburban Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "9191 Grant St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Thornton",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80229",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 157,
+                "NUM_STAFFED_BEDS": 127,
+                "NUM_ICU_BEDS": 16,
+                "ADULT_ICU_BEDS": 16,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5709201,
+                "Potential_Increase_In_Bed_Capac": 30,
+                "AVG_VENTILATOR_USAGE": 5
+            },
+            "geometry": {
+                "x": -104.98570889999996,
+                "y": 39.863555100000042
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 588,
+                "HOSPITAL_NAME": "Childrens Hospital Colorado - Anschutz Medical Campus",
+                "HOSPITAL_TYPE": "Childrens Hospital",
+                "HQ_ADDRESS": "13123 E 16th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80045",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 444,
+                "NUM_STAFFED_BEDS": 434,
+                "NUM_ICU_BEDS": 36,
+                "ADULT_ICU_BEDS": 36,
+                "PEDI_ICU_BEDS": 82,
+                "BED_UTILIZATION": 0.6275822,
+                "Potential_Increase_In_Bed_Capac": 10,
+                "AVG_VENTILATOR_USAGE": 5
+            },
+            "geometry": {
+                "x": -104.83493109999995,
+                "y": 39.742249500000071
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 589,
+                "HOSPITAL_NAME": "SLV Health Regional Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "106 Blanca Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Alamosa",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81101",
+                "COUNTY_NAME": "Alamosa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "003",
+                "FIPS": "08003",
+                "NUM_LICENSED_BEDS": 49,
+                "NUM_STAFFED_BEDS": 49,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3779145,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.88288599999998,
+                "y": 37.472478700000067
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 590,
+                "HOSPITAL_NAME": "The Medical Center of Aurora - Main Campus",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1501 S Potomac St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80012",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 346,
+                "NUM_STAFFED_BEDS": 309,
+                "NUM_ICU_BEDS": 45,
+                "ADULT_ICU_BEDS": 45,
+                "PEDI_ICU_BEDS": 14,
+                "BED_UTILIZATION": 0.6766432,
+                "Potential_Increase_In_Bed_Capac": 37,
+                "AVG_VENTILATOR_USAGE": 8
+            },
+            "geometry": {
+                "x": -104.83174179999997,
+                "y": 39.688603700000044
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 591,
+                "HOSPITAL_NAME": "Swedish Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "501 E Hampden Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Englewood",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80113",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 408,
+                "NUM_STAFFED_BEDS": 327,
+                "NUM_ICU_BEDS": 58,
+                "ADULT_ICU_BEDS": 58,
+                "PEDI_ICU_BEDS": 17,
+                "BED_UTILIZATION": 0.7616182,
+                "Potential_Increase_In_Bed_Capac": 81,
+                "AVG_VENTILATOR_USAGE": 10
+            },
+            "geometry": {
+                "x": -104.98071769999996,
+                "y": 39.654170300000033
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 592,
+                "HOSPITAL_NAME": "Sky Ridge Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "10101 Ridgegate Pkwy",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Lone Tree",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80124",
+                "COUNTY_NAME": "Douglas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "035",
+                "FIPS": "08035",
+                "NUM_LICENSED_BEDS": 284,
+                "NUM_STAFFED_BEDS": 284,
+                "NUM_ICU_BEDS": 30,
+                "ADULT_ICU_BEDS": 30,
+                "PEDI_ICU_BEDS": 28,
+                "BED_UTILIZATION": 0.5273714,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 4
+            },
+            "geometry": {
+                "x": -104.87121199999996,
+                "y": 39.529099000000031
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 593,
+                "HOSPITAL_NAME": "Littleton Adventist Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "7700 S Broadway",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Littleton",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80122",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 231,
+                "NUM_STAFFED_BEDS": 159,
+                "NUM_ICU_BEDS": 24,
+                "ADULT_ICU_BEDS": 24,
+                "PEDI_ICU_BEDS": 14,
+                "BED_UTILIZATION": 0.6603946,
+                "Potential_Increase_In_Bed_Capac": 72,
+                "AVG_VENTILATOR_USAGE": 4
+            },
+            "geometry": {
+                "x": -104.98610399999995,
+                "y": 39.576288400000067
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 594,
+                "HOSPITAL_NAME": "Pagosa Springs Medical Center (FKA Pagosa Mountain Hospital)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "95 S Pagosa Blvd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Pagosa Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81147",
+                "COUNTY_NAME": "Archuleta",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "007",
+                "FIPS": "08007",
+                "NUM_LICENSED_BEDS": 11,
+                "NUM_STAFFED_BEDS": 11,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2956413,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -107.07913699999995,
+                "y": 37.252142900000024
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 595,
+                "HOSPITAL_NAME": "Good Samaritan Medical Center (FKA Exempla Good Samaritan Medical Center LLC)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "200 Exempla Cir",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Lafayette",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80026",
+                "COUNTY_NAME": "Boulder",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "013",
+                "FIPS": "08013",
+                "NUM_LICENSED_BEDS": 234,
+                "NUM_STAFFED_BEDS": 183,
+                "NUM_ICU_BEDS": 24,
+                "ADULT_ICU_BEDS": 24,
+                "PEDI_ICU_BEDS": 12,
+                "BED_UTILIZATION": 0.6969234,
+                "Potential_Increase_In_Bed_Capac": 51,
+                "AVG_VENTILATOR_USAGE": 6
+            },
+            "geometry": {
+                "x": -105.08652149999995,
+                "y": 39.970519000000024
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 596,
+                "HOSPITAL_NAME": "Avista Adventist Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "100 Health Park Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Louisville",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80027",
+                "COUNTY_NAME": "Boulder",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "013",
+                "FIPS": "08013",
+                "NUM_LICENSED_BEDS": 114,
+                "NUM_STAFFED_BEDS": 108,
+                "NUM_ICU_BEDS": 8,
+                "ADULT_ICU_BEDS": 8,
+                "PEDI_ICU_BEDS": 26,
+                "BED_UTILIZATION": 0.3495434,
+                "Potential_Increase_In_Bed_Capac": 6,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.15174619999999,
+                "y": 39.951933300000064
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 597,
+                "HOSPITAL_NAME": "Longmont United Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1950 Mountain View Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Longmont",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80501",
+                "COUNTY_NAME": "Boulder",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "013",
+                "FIPS": "08013",
+                "NUM_LICENSED_BEDS": 186,
+                "NUM_STAFFED_BEDS": 131,
+                "NUM_ICU_BEDS": 16,
+                "ADULT_ICU_BEDS": 16,
+                "PEDI_ICU_BEDS": 6,
+                "BED_UTILIZATION": 0.3856949,
+                "Potential_Increase_In_Bed_Capac": 55,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.12607829999996,
+                "y": 40.182219500000031
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 598,
+                "HOSPITAL_NAME": "Heart of the Rockies Regional Medical Center",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1000 Rush Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Salida",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81201",
+                "COUNTY_NAME": "Chaffee",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "015",
+                "FIPS": "08015",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4101918,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.00882469999999,
+                "y": 38.543155800000079
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 599,
+                "HOSPITAL_NAME": "Keefe Memorial Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "602 N 6th St W",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Cheyenne Wells",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80810",
+                "COUNTY_NAME": "Cheyenne",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "017",
+                "FIPS": "08017",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 11,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": 0.05678705,
+                "Potential_Increase_In_Bed_Capac": 14,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -102.35549999999995,
+                "y": 38.82570000000004
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 600,
+                "HOSPITAL_NAME": "Delta Memorial Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1501 E 3rd St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Delta",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81416",
+                "COUNTY_NAME": "Delta",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "029",
+                "FIPS": "08029",
+                "NUM_LICENSED_BEDS": 49,
+                "NUM_STAFFED_BEDS": 49,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.273693,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -108.04699999999997,
+                "y": 38.745399900000052
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 601,
+                "HOSPITAL_NAME": "National Jewish Health",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1400 Jackson St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80206",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 46,
+                "NUM_STAFFED_BEDS": 24,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.02134703,
+                "Potential_Increase_In_Bed_Capac": 22,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.94112119999994,
+                "y": 39.73907360000004
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 602,
+                "HOSPITAL_NAME": "Rose Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "4567 E 9th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80220",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 422,
+                "NUM_STAFFED_BEDS": 226,
+                "NUM_ICU_BEDS": 35,
+                "ADULT_ICU_BEDS": 35,
+                "PEDI_ICU_BEDS": 24,
+                "BED_UTILIZATION": 0.4880818,
+                "Potential_Increase_In_Bed_Capac": 196,
+                "AVG_VENTILATOR_USAGE": 5
+            },
+            "geometry": {
+                "x": -104.93404969999995,
+                "y": 39.732185000000072
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 603,
+                "HOSPITAL_NAME": "Porter Adventist Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2525 S Downing St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80210",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 368,
+                "NUM_STAFFED_BEDS": 176,
+                "NUM_ICU_BEDS": 36,
+                "ADULT_ICU_BEDS": 36,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5125,
+                "Potential_Increase_In_Bed_Capac": 192,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.97481949999997,
+                "y": 39.670038600000055
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 604,
+                "HOSPITAL_NAME": "Saint Joseph Hospital (FKA Exempla St Joseph Hospital)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1375 E 19th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80218",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 400,
+                "NUM_STAFFED_BEDS": 361,
+                "NUM_ICU_BEDS": 30,
+                "ADULT_ICU_BEDS": 30,
+                "PEDI_ICU_BEDS": 35,
+                "BED_UTILIZATION": 0.6354722,
+                "Potential_Increase_In_Bed_Capac": 39,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.97172679999994,
+                "y": 39.746188200000063
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 605,
+                "HOSPITAL_NAME": "Denver Health Main Campus",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "777 Bannock St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80204",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 555,
+                "NUM_STAFFED_BEDS": 378,
+                "NUM_ICU_BEDS": 55,
+                "ADULT_ICU_BEDS": 55,
+                "PEDI_ICU_BEDS": 25,
+                "BED_UTILIZATION": 0.6413538,
+                "Potential_Increase_In_Bed_Capac": 177,
+                "AVG_VENTILATOR_USAGE": 4
+            },
+            "geometry": {
+                "x": -104.99108009999998,
+                "y": 39.728240400000061
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 606,
+                "HOSPITAL_NAME": "Presbyterian/St Lukes Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1719 E 19th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80218",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 680,
+                "NUM_STAFFED_BEDS": 307,
+                "NUM_ICU_BEDS": 71,
+                "ADULT_ICU_BEDS": 71,
+                "PEDI_ICU_BEDS": 42,
+                "BED_UTILIZATION": 0.5972095,
+                "Potential_Increase_In_Bed_Capac": 373,
+                "AVG_VENTILATOR_USAGE": 5
+            },
+            "geometry": {
+                "x": -104.96651689999999,
+                "y": 39.74704760000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 607,
+                "HOSPITAL_NAME": "St Anthony Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "11600 W 2nd Pl",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Lakewood",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80228",
+                "COUNTY_NAME": "Jefferson",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "059",
+                "FIPS": "08059",
+                "NUM_LICENSED_BEDS": 237,
+                "NUM_STAFFED_BEDS": 220,
+                "NUM_ICU_BEDS": 76,
+                "ADULT_ICU_BEDS": 76,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.6982939,
+                "Potential_Increase_In_Bed_Capac": 17,
+                "AVG_VENTILATOR_USAGE": 7
+            },
+            "geometry": {
+                "x": -105.1294246,
+                "y": 39.71646510000005
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 608,
+                "HOSPITAL_NAME": "Parker Adventist Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "9395 Crown Crest Blvd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Parker",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80138",
+                "COUNTY_NAME": "Douglas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "035",
+                "FIPS": "08035",
+                "NUM_LICENSED_BEDS": 170,
+                "NUM_STAFFED_BEDS": 165,
+                "NUM_ICU_BEDS": 16,
+                "ADULT_ICU_BEDS": 16,
+                "PEDI_ICU_BEDS": 12,
+                "BED_UTILIZATION": 0.4830418,
+                "Potential_Increase_In_Bed_Capac": 5,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.77103829999999,
+                "y": 39.548613300000056
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 609,
+                "HOSPITAL_NAME": "Vail Health (FKA Vail Valley Medical Center)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "181 W Meadow Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Vail",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81657",
+                "COUNTY_NAME": "Eagle",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "037",
+                "FIPS": "08037",
+                "NUM_LICENSED_BEDS": 56,
+                "NUM_STAFFED_BEDS": 56,
+                "NUM_ICU_BEDS": 5,
+                "ADULT_ICU_BEDS": 5,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2490705,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.38226629999997,
+                "y": 39.643520800000033
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 610,
+                "HOSPITAL_NAME": "UCHealth Memorial Hospital Central",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1400 E Boulder St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80909",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 583,
+                "NUM_STAFFED_BEDS": 515,
+                "NUM_ICU_BEDS": 46,
+                "ADULT_ICU_BEDS": 46,
+                "PEDI_ICU_BEDS": 84,
+                "BED_UTILIZATION": 0.6456127,
+                "Potential_Increase_In_Bed_Capac": 68,
+                "AVG_VENTILATOR_USAGE": 12
+            },
+            "geometry": {
+                "x": -104.79939669999999,
+                "y": 38.839413000000036
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 611,
+                "HOSPITAL_NAME": "Penrose Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2222 N Nevada Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80907",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 364,
+                "NUM_STAFFED_BEDS": null,
+                "NUM_ICU_BEDS": 45,
+                "ADULT_ICU_BEDS": 45,
+                "PEDI_ICU_BEDS": 46,
+                "BED_UTILIZATION": 0.5948363,
+                "Potential_Increase_In_Bed_Capac": 364,
+                "AVG_VENTILATOR_USAGE": 9
+            },
+            "geometry": {
+                "x": -104.82174499999996,
+                "y": 38.865536700000064
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 612,
+                "HOSPITAL_NAME": "St Thomas More Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1338 Phay Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Canon City",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81212",
+                "COUNTY_NAME": "Fremont",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "043",
+                "FIPS": "08043",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5951781,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.22973199999996,
+                "y": 38.455663300000026
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 613,
+                "HOSPITAL_NAME": "Valley View Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1906 Blake Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Glenwood Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81601",
+                "COUNTY_NAME": "Garfield",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "045",
+                "FIPS": "08045",
+                "NUM_LICENSED_BEDS": 78,
+                "NUM_STAFFED_BEDS": 41,
+                "NUM_ICU_BEDS": 5,
+                "ADULT_ICU_BEDS": 5,
+                "PEDI_ICU_BEDS": 2,
+                "BED_UTILIZATION": 0.8040094,
+                "Potential_Increase_In_Bed_Capac": 37,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -107.32150509999997,
+                "y": 39.532495300000051
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 614,
+                "HOSPITAL_NAME": "Grand River Medical Center (AKA Grand River Health)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "501 Airport Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Rifle",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81650",
+                "COUNTY_NAME": "Garfield",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "045",
+                "FIPS": "08045",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 12,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.43379,
+                "Potential_Increase_In_Bed_Capac": 13,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -107.77000559999999,
+                "y": 39.521113100000036
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 615,
+                "HOSPITAL_NAME": "Gunnison Valley Health",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "711 N Taylor St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Gunnison",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81230",
+                "COUNTY_NAME": "Gunnison",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "051",
+                "FIPS": "08051",
+                "NUM_LICENSED_BEDS": 24,
+                "NUM_STAFFED_BEDS": 20,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2334247,
+                "Potential_Increase_In_Bed_Capac": 4,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.92495109999999,
+                "y": 38.551862500000027
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 616,
+                "HOSPITAL_NAME": "Spanish Peaks Regional Health Center",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "23500 Us Highway 160",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Walsenburg",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81089",
+                "COUNTY_NAME": "Huerfano",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "055",
+                "FIPS": "08055",
+                "NUM_LICENSED_BEDS": 20,
+                "NUM_STAFFED_BEDS": 16,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1340753,
+                "Potential_Increase_In_Bed_Capac": 4,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.83175969999996,
+                "y": 37.600343800000076
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 617,
+                "HOSPITAL_NAME": "St Anthony North Health Campus",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "14300 Orchard Pkwy",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Westminster",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80023",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 100,
+                "NUM_STAFFED_BEDS": 92,
+                "NUM_ICU_BEDS": 20,
+                "ADULT_ICU_BEDS": 20,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5597975,
+                "Potential_Increase_In_Bed_Capac": 8,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.99119049999996,
+                "y": 39.956437300000061
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 618,
+                "HOSPITAL_NAME": "Lutheran Medical Center (FKA Exempla Lutheran Medical Center)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "8300 W 38th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Wheat Ridge",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80033",
+                "COUNTY_NAME": "Jefferson",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "059",
+                "FIPS": "08059",
+                "NUM_LICENSED_BEDS": 338,
+                "NUM_STAFFED_BEDS": 186,
+                "NUM_ICU_BEDS": 18,
+                "ADULT_ICU_BEDS": 18,
+                "PEDI_ICU_BEDS": 20,
+                "BED_UTILIZATION": 0.6358816,
+                "Potential_Increase_In_Bed_Capac": 152,
+                "AVG_VENTILATOR_USAGE": 9
+            },
+            "geometry": {
+                "x": -105.08989879999996,
+                "y": 39.768112100000053
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 619,
+                "HOSPITAL_NAME": "Kit Carson County Memorial Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "286 16th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Burlington",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80807",
+                "COUNTY_NAME": "Kit Carson",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "063",
+                "FIPS": "08063",
+                "NUM_LICENSED_BEDS": 19,
+                "NUM_STAFFED_BEDS": 19,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2438356,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -102.27057579999996,
+                "y": 39.303006500000038
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 620,
+                "HOSPITAL_NAME": "St Vincent General Hospital District",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "822 W 4th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Leadville",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80461",
+                "COUNTY_NAME": "Lake",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "065",
+                "FIPS": "08065",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 8,
+                "NUM_ICU_BEDS": 1,
+                "ADULT_ICU_BEDS": 1,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.09486301,
+                "Potential_Increase_In_Bed_Capac": 17,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -106.30151939999996,
+                "y": 39.244889900000032
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 621,
+                "HOSPITAL_NAME": "Animas Surgical Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "575 Rivergate Ln",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Durango",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81301",
+                "COUNTY_NAME": "La Plata",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "067",
+                "FIPS": "08067",
+                "NUM_LICENSED_BEDS": 12,
+                "NUM_STAFFED_BEDS": 12,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2020548,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -107.87088269999998,
+                "y": 37.248070600000062
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 622,
+                "HOSPITAL_NAME": "Mercy Regional Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1010 Three Springs Blvd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Durango",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81301",
+                "COUNTY_NAME": "La Plata",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "067",
+                "FIPS": "08067",
+                "NUM_LICENSED_BEDS": 82,
+                "NUM_STAFFED_BEDS": 82,
+                "NUM_ICU_BEDS": 11,
+                "ADULT_ICU_BEDS": 11,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4490478,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -107.82556179999995,
+                "y": 37.236101800000029
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 623,
+                "HOSPITAL_NAME": "McKee Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2000 Boise Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Loveland",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80538",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 115,
+                "NUM_STAFFED_BEDS": 115,
+                "NUM_ICU_BEDS": 11,
+                "ADULT_ICU_BEDS": 11,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2277784,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.05132809999998,
+                "y": 40.413236500000039
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 624,
+                "HOSPITAL_NAME": "UCHealth Poudre Valley Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1024 S Lemay Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Fort Collins",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80524",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 255,
+                "NUM_STAFFED_BEDS": 225,
+                "NUM_ICU_BEDS": 12,
+                "ADULT_ICU_BEDS": 12,
+                "PEDI_ICU_BEDS": 25,
+                "BED_UTILIZATION": 0.6017778,
+                "Potential_Increase_In_Bed_Capac": 30,
+                "AVG_VENTILATOR_USAGE": 7
+            },
+            "geometry": {
+                "x": -105.05665469999997,
+                "y": 40.571648400000072
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 625,
+                "HOSPITAL_NAME": "Estes Park Health (FKA Estes Park Medical Center)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "555 Prospect Ave",
+                "HQ_ADDRESS1": "P.O. Box 2740",
+                "HQ_CITY": "Estes Park",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80517",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 23,
+                "NUM_STAFFED_BEDS": 23,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1329315,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -105.51501659999997,
+                "y": 40.371419900000035
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 626,
+                "HOSPITAL_NAME": "UCHealth Medical Center of the Rockies",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2500 Rocky Mountain Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Loveland",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80538",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 174,
+                "NUM_STAFFED_BEDS": 174,
+                "NUM_ICU_BEDS": 20,
+                "ADULT_ICU_BEDS": 20,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.763675,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 9
+            },
+            "geometry": {
+                "x": -104.99722109999999,
+                "y": 40.415781600000059
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 627,
+                "HOSPITAL_NAME": "Mt San Rafael Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "410 Benedicta Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Trinidad",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81082",
+                "COUNTY_NAME": "Las Animas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "071",
+                "FIPS": "08071",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2870137,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.48756569999995,
+                "y": 37.17329490000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 628,
+                "HOSPITAL_NAME": "Sterling Regional MedCenter",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "615 Fairhurst St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Sterling",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80751",
+                "COUNTY_NAME": "Logan",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "075",
+                "FIPS": "08075",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3240548,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -103.22108429999997,
+                "y": 40.61239960000006
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 629,
+                "HOSPITAL_NAME": "VA Western Colorado Health Care System (AKA Grand Junction VA Medical Center)",
+                "HOSPITAL_TYPE": "VA Hospital",
+                "HQ_ADDRESS": "2121 North Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Grand Junction",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81501",
+                "COUNTY_NAME": "Mesa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "077",
+                "FIPS": "08077",
+                "NUM_LICENSED_BEDS": 53,
+                "NUM_STAFFED_BEDS": 53,
+                "NUM_ICU_BEDS": 1,
+                "ADULT_ICU_BEDS": 1,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -108.54101799999995,
+                "y": 39.076286000000039
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 630,
+                "HOSPITAL_NAME": "Community Hospital (AKA Colorado West Healthcare System)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2351 G Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Grand Junction",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81505",
+                "COUNTY_NAME": "Mesa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "077",
+                "FIPS": "08077",
+                "NUM_LICENSED_BEDS": 60,
+                "NUM_STAFFED_BEDS": 53,
+                "NUM_ICU_BEDS": 12,
+                "ADULT_ICU_BEDS": 12,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3218403,
+                "Potential_Increase_In_Bed_Capac": 7,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -108.61526559999999,
+                "y": 39.105197200000077
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 631,
+                "HOSPITAL_NAME": "St Marys Medical Center (FKA St Marys Hospital and Medical Center)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2635 N 7th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Grand Junction",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81501",
+                "COUNTY_NAME": "Mesa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "077",
+                "FIPS": "08077",
+                "NUM_LICENSED_BEDS": 346,
+                "NUM_STAFFED_BEDS": 257,
+                "NUM_ICU_BEDS": 18,
+                "ADULT_ICU_BEDS": 18,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.6038484,
+                "Potential_Increase_In_Bed_Capac": 89,
+                "AVG_VENTILATOR_USAGE": 8
+            },
+            "geometry": {
+                "x": -108.56270549999999,
+                "y": 39.090481100000034
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 632,
+                "HOSPITAL_NAME": "Memorial Regional Health (FKA Memorial Hospital at Craig)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "750 Hospital Loop",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Craig",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81625",
+                "COUNTY_NAME": "Moffat",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "081",
+                "FIPS": "08081",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3530959,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -107.58021559999997,
+                "y": 40.518654600000048
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 633,
+                "HOSPITAL_NAME": "Southwest Memorial Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1311 N Mildred Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Cortez",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81321",
+                "COUNTY_NAME": "Montezuma",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "083",
+                "FIPS": "08083",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3845479,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -108.57460919999994,
+                "y": 37.362159600000041
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 634,
+                "HOSPITAL_NAME": "Montrose Memorial Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "800 S 3rd St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Montrose",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81401",
+                "COUNTY_NAME": "Montrose",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "085",
+                "FIPS": "08085",
+                "NUM_LICENSED_BEDS": 75,
+                "NUM_STAFFED_BEDS": 50,
+                "NUM_ICU_BEDS": 8,
+                "ADULT_ICU_BEDS": 8,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3665206,
+                "Potential_Increase_In_Bed_Capac": 25,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -107.86893879999997,
+                "y": 38.480020400000058
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 635,
+                "HOSPITAL_NAME": "Colorado Plains Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1000 Lincoln St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Fort Morgan",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80701",
+                "COUNTY_NAME": "Morgan",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "087",
+                "FIPS": "08087",
+                "NUM_LICENSED_BEDS": 50,
+                "NUM_STAFFED_BEDS": 36,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1456621,
+                "Potential_Increase_In_Bed_Capac": 14,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -103.79536399999995,
+                "y": 40.259718700000064
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 636,
+                "HOSPITAL_NAME": "East Morgan County Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "2400 Edison St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Brush",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80723",
+                "COUNTY_NAME": "Morgan",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "087",
+                "FIPS": "08087",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1636164,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -103.64947459999996,
+                "y": 40.255678600000067
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 637,
+                "HOSPITAL_NAME": "Arkansas Valley Regional Medical Center",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1100 Carson Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "La Junta",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81050",
+                "COUNTY_NAME": "Otero",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "089",
+                "FIPS": "08089",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 5,
+                "ADULT_ICU_BEDS": 5,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4908219,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -103.54881779999994,
+                "y": 37.978803700000071
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 638,
+                "HOSPITAL_NAME": "Melissa Memorial Hospital (AKA East Phillips County Hospital District)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1001 E Johnson St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Holyoke",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80734",
+                "COUNTY_NAME": "Phillips",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "095",
+                "FIPS": "08095",
+                "NUM_LICENSED_BEDS": 15,
+                "NUM_STAFFED_BEDS": 15,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1926941,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -102.29029419999995,
+                "y": 40.579260500000032
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 639,
+                "HOSPITAL_NAME": "Aspen Valley Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "401 Castle Creek Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aspen",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81611",
+                "COUNTY_NAME": "Pitkin",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "097",
+                "FIPS": "08097",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2545753,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.83959369999997,
+                "y": 39.190544500000044
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 640,
+                "HOSPITAL_NAME": "Prowers Medical Center",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "401 Kendall Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Lamar",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81052",
+                "COUNTY_NAME": "Prowers",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "099",
+                "FIPS": "08099",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3273425,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -102.61049859999997,
+                "y": 38.069781300000045
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 641,
+                "HOSPITAL_NAME": "St Mary-Corwin Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1008 Minnequa Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Pueblo",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81004",
+                "COUNTY_NAME": "Pueblo",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "101",
+                "FIPS": "08101",
+                "NUM_LICENSED_BEDS": 408,
+                "NUM_STAFFED_BEDS": 42,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.52394,
+                "Potential_Increase_In_Bed_Capac": 366,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.62398699999994,
+                "y": 38.233881000000054
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 642,
+                "HOSPITAL_NAME": "Parkview Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "400 W 16th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Pueblo",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81003",
+                "COUNTY_NAME": "Pueblo",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "101",
+                "FIPS": "08101",
+                "NUM_LICENSED_BEDS": 350,
+                "NUM_STAFFED_BEDS": 276,
+                "NUM_ICU_BEDS": 11,
+                "ADULT_ICU_BEDS": 11,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.6733316,
+                "Potential_Increase_In_Bed_Capac": 74,
+                "AVG_VENTILATOR_USAGE": 9
+            },
+            "geometry": {
+                "x": -104.61269399999998,
+                "y": 38.281783100000041
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 643,
+                "HOSPITAL_NAME": "Pioneers Medical Center",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "100 Pioneers Medical Center Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Meeker",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81641",
+                "COUNTY_NAME": "Rio Blanco",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "103",
+                "FIPS": "08103",
+                "NUM_LICENSED_BEDS": 10,
+                "NUM_STAFFED_BEDS": 10,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4016438,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -107.88229679999995,
+                "y": 40.047002600000042
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 644,
+                "HOSPITAL_NAME": "Rangely District Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "225 Eagle Crest St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Rangely",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81648",
+                "COUNTY_NAME": "Rio Blanco",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "103",
+                "FIPS": "08103",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5587945,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -108.80146479999996,
+                "y": 40.083193000000051
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 645,
+                "HOSPITAL_NAME": "Rio Grande Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "310 County Road 14",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Del Norte",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81132",
+                "COUNTY_NAME": "Rio Grande",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "105",
+                "FIPS": "08105",
+                "NUM_LICENSED_BEDS": 17,
+                "NUM_STAFFED_BEDS": 17,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.396938,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.36349999999999,
+                "y": 37.67530000000005
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 646,
+                "HOSPITAL_NAME": "UCHealth Yampa Valley Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1024 Central Park Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Steamboat Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80487",
+                "COUNTY_NAME": "Routt",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "107",
+                "FIPS": "08107",
+                "NUM_LICENSED_BEDS": 39,
+                "NUM_STAFFED_BEDS": 39,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2238145,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.81455589999996,
+                "y": 40.463336900000058
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 647,
+                "HOSPITAL_NAME": "St Anthony Summit Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "340 Peak One Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Frisco",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80443",
+                "COUNTY_NAME": "Summit",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "117",
+                "FIPS": "08117",
+                "NUM_LICENSED_BEDS": 35,
+                "NUM_STAFFED_BEDS": 34,
+                "NUM_ICU_BEDS": 8,
+                "ADULT_ICU_BEDS": 8,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2525383,
+                "Potential_Increase_In_Bed_Capac": 1,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -106.13103099999995,
+                "y": 39.538528000000042
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 648,
+                "HOSPITAL_NAME": "UCHealth Pikes Peak Regional Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "16420 W Us Highway 24",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Woodland Park",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80863",
+                "COUNTY_NAME": "Teller",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "119",
+                "FIPS": "08119",
+                "NUM_LICENSED_BEDS": 15,
+                "NUM_STAFFED_BEDS": 15,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2946119,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -105.07448999999997,
+                "y": 38.974604200000044
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 649,
+                "HOSPITAL_NAME": "North Colorado Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1801 16th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Greeley",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80631",
+                "COUNTY_NAME": "Weld",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "123",
+                "FIPS": "08123",
+                "NUM_LICENSED_BEDS": 378,
+                "NUM_STAFFED_BEDS": 225,
+                "NUM_ICU_BEDS": 26,
+                "ADULT_ICU_BEDS": 26,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5236773,
+                "Potential_Increase_In_Bed_Capac": 153,
+                "AVG_VENTILATOR_USAGE": 4
+            },
+            "geometry": {
+                "x": -104.65224009999997,
+                "y": 40.414025300000048
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 650,
+                "HOSPITAL_NAME": "Wray Community District Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1017 W 7th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Wray",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80758",
+                "COUNTY_NAME": "Yuma",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "125",
+                "FIPS": "08125",
+                "NUM_LICENSED_BEDS": 15,
+                "NUM_STAFFED_BEDS": 15,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2645548,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -102.23485479999994,
+                "y": 40.076215500000046
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 651,
+                "HOSPITAL_NAME": "Yuma District Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1000 W 8th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Yuma",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80759",
+                "COUNTY_NAME": "Yuma",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "125",
+                "FIPS": "08125",
+                "NUM_LICENSED_BEDS": 15,
+                "NUM_STAFFED_BEDS": 15,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1068493,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -102.73703489999997,
+                "y": 40.12036020000005
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4322,
+                "HOSPITAL_NAME": "Colorado Mental Health Institute at Pueblo",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "1600 W 24th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Pueblo",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81003",
+                "COUNTY_NAME": "Pueblo",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "101",
+                "FIPS": "08101",
+                "NUM_LICENSED_BEDS": 494,
+                "NUM_STAFFED_BEDS": 452,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.948154,
+                "Potential_Increase_In_Bed_Capac": 42,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.63047839999996,
+                "y": 38.289576600000032
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4502,
+                "HOSPITAL_NAME": "Centennial Peaks Hospital",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "2255 S 88th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Louisville",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80027",
+                "COUNTY_NAME": "Boulder",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "013",
+                "FIPS": "08013",
+                "NUM_LICENSED_BEDS": 104,
+                "NUM_STAFFED_BEDS": 104,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.7136723,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -105.14805329999996,
+                "y": 39.952020700000048
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4547,
+                "HOSPITAL_NAME": "Highlands Behavioral Health System",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "8565 Poplar Way",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Highlands Ranch",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80130",
+                "COUNTY_NAME": "Douglas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "035",
+                "FIPS": "08035",
+                "NUM_LICENSED_BEDS": 86,
+                "NUM_STAFFED_BEDS": 86,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.67633,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.90764259999997,
+                "y": 39.562738100000047
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4573,
+                "HOSPITAL_NAME": "PAM Specialty Hospital of Denver (FKA Colorado Acute Long Term Hospital)",
+                "HOSPITAL_TYPE": "Long Term Acute Care Hospital",
+                "HQ_ADDRESS": "1690 Meade St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80204",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 63,
+                "NUM_STAFFED_BEDS": 63,
+                "NUM_ICU_BEDS": 10,
+                "ADULT_ICU_BEDS": 10,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.6280718,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.03509139999994,
+                "y": 39.743545500000039
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4652,
+                "HOSPITAL_NAME": "Lincoln Community Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "111 6th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Hugo",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80821",
+                "COUNTY_NAME": "Lincoln",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "073",
+                "FIPS": "08073",
+                "NUM_LICENSED_BEDS": 15,
+                "NUM_STAFFED_BEDS": 15,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1724201,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -103.46740939999995,
+                "y": 39.135719400000028
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4725,
+                "HOSPITAL_NAME": "Haxtun Hospital District",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "235 W Fletcher St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Haxtun",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80731",
+                "COUNTY_NAME": "Phillips",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "095",
+                "FIPS": "08095",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.8199452,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -102.63043339999996,
+                "y": 40.641482200000041
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4732,
+                "HOSPITAL_NAME": "Vibra Hospital of Denver",
+                "HOSPITAL_TYPE": "Rehabilitation Hospital",
+                "HQ_ADDRESS": "8451 Pearl St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Thornton",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80229",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 54,
+                "NUM_STAFFED_BEDS": 54,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4342973,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.98041429999995,
+                "y": 39.850259700000038
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4798,
+                "HOSPITAL_NAME": "Northern Colorado Long Term Acute Hospital",
+                "HOSPITAL_TYPE": "Long Term Acute Care Hospital",
+                "HQ_ADDRESS": "4401a Union St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Johnstown",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80534",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 20,
+                "NUM_STAFFED_BEDS": 20,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.8047945,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.97128619999995,
+                "y": 40.406317700000045
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4854,
+                "HOSPITAL_NAME": "Sedgwick County Health Center",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "900 Cedar St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Julesburg",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80737",
+                "COUNTY_NAME": "Sedgwick",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "115",
+                "FIPS": "08115",
+                "NUM_LICENSED_BEDS": 15,
+                "NUM_STAFFED_BEDS": 9,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.2228311,
+                "Potential_Increase_In_Bed_Capac": 6,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -102.26866519999999,
+                "y": 40.993361900000025
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4982,
+                "HOSPITAL_NAME": "Northern Colorado Rehabilitation Hospital",
+                "HOSPITAL_TYPE": "Rehabilitation Hospital",
+                "HQ_ADDRESS": "4401 Union St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Johnstown",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80534",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 40,
+                "NUM_STAFFED_BEDS": 40,
+                "NUM_ICU_BEDS": 9,
+                "ADULT_ICU_BEDS": 9,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.8829452,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.97128619999995,
+                "y": 40.406317700000045
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5044,
+                "HOSPITAL_NAME": "Kiowa County District Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "1208 Luther St",
+                "HQ_ADDRESS1": "PO Box 817",
+                "HQ_CITY": "Eads",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81036",
+                "COUNTY_NAME": "Kiowa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "061",
+                "FIPS": "08061",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.6487671,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -102.74838699999998,
+                "y": 38.440126000000078
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5055,
+                "HOSPITAL_NAME": "Conejos County Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "19021 Us Highway 285",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "La Jara",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81140",
+                "COUNTY_NAME": "Conejos",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "021",
+                "FIPS": "08021",
+                "NUM_LICENSED_BEDS": 17,
+                "NUM_STAFFED_BEDS": 17,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.1729251,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -105.96566429999996,
+                "y": 37.262907600000062
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5105,
+                "HOSPITAL_NAME": "Middle Park Health - Kremmling (FKA Middle Park Medical Center - Kremmling)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "214 4th St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Kremmling",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80459",
+                "COUNTY_NAME": "Grand",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "049",
+                "FIPS": "08049",
+                "NUM_LICENSED_BEDS": 23,
+                "NUM_STAFFED_BEDS": 21,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4854534,
+                "Potential_Increase_In_Bed_Capac": 2,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -106.43979499999995,
+                "y": 40.237850000000037
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5106,
+                "HOSPITAL_NAME": "Colorado Mental Health Institute Fort Logan",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "3520 W Oxford Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80236",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 94,
+                "NUM_STAFFED_BEDS": 94,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.9328184,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -105.03361469999999,
+                "y": 39.641502900000035
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5155,
+                "HOSPITAL_NAME": "Family Health West (FKA Colorado Canyons Hospital and Medical Center)",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "300 W Ottley Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Fruita",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81521",
+                "COUNTY_NAME": "Mesa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "077",
+                "FIPS": "08077",
+                "NUM_LICENSED_BEDS": 25,
+                "NUM_STAFFED_BEDS": 25,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5356005,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -108.73661539999995,
+                "y": 39.163632100000029
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5262,
+                "HOSPITAL_NAME": "Cedar Springs Hospital",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "2135 Southgate Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80906",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 76,
+                "NUM_STAFFED_BEDS": 86,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.7653074,
+                "Potential_Increase_In_Bed_Capac": -10,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.81674299999997,
+                "y": 38.802103700000032
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5302,
+                "HOSPITAL_NAME": "Southeast Colorado Hospital",
+                "HOSPITAL_TYPE": "Critical Access Hospital",
+                "HQ_ADDRESS": "373 E 10th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Springfield",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81073",
+                "COUNTY_NAME": "Baca",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "009",
+                "FIPS": "08009",
+                "NUM_LICENSED_BEDS": 23,
+                "NUM_STAFFED_BEDS": 15,
+                "NUM_ICU_BEDS": 3,
+                "ADULT_ICU_BEDS": 3,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3282192,
+                "Potential_Increase_In_Bed_Capac": 8,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -102.61242199999998,
+                "y": 37.404240200000061
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5332,
+                "HOSPITAL_NAME": "Kindred Hospital - Denver",
+                "HOSPITAL_TYPE": "Long Term Acute Care Hospital",
+                "HQ_ADDRESS": "1920 N High St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80218",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 68,
+                "NUM_STAFFED_BEDS": 68,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3949637,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.96448599999997,
+                "y": 39.746245200000033
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5348,
+                "HOSPITAL_NAME": "West Springs Hospital (AKA Colorado West Hospital)",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "515 28 3/4 Rd",
+                "HQ_ADDRESS1": "Suite 40",
+                "HQ_CITY": "Grand Junction",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81501",
+                "COUNTY_NAME": "Mesa",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "077",
+                "FIPS": "08077",
+                "NUM_LICENSED_BEDS": 64,
+                "NUM_STAFFED_BEDS": 64,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.521661,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -108.52089589999997,
+                "y": 39.078836100000046
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5375,
+                "HOSPITAL_NAME": "Craig Hospital",
+                "HOSPITAL_TYPE": "Long Term Acute Care Hospital",
+                "HQ_ADDRESS": "3425 S Clarkson St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Englewood",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80113",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 93,
+                "NUM_STAFFED_BEDS": 93,
+                "NUM_ICU_BEDS": 14,
+                "ADULT_ICU_BEDS": 14,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.8427162,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -104.97877119999998,
+                "y": 39.654245700000047
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5405,
+                "HOSPITAL_NAME": "Spalding Rehabilitation Hospital",
+                "HOSPITAL_TYPE": "Rehabilitation Hospital",
+                "HQ_ADDRESS": "900 Potomac St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80011",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 78,
+                "NUM_STAFFED_BEDS": 58,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.649693,
+                "Potential_Increase_In_Bed_Capac": 20,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -104.82731279999996,
+                "y": 39.731133900000032
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5460,
+                "HOSPITAL_NAME": "Kindred Hospital Aurora",
+                "HOSPITAL_TYPE": "Long Term Acute Care Hospital",
+                "HQ_ADDRESS": "700 Potomac St",
+                "HQ_ADDRESS1": "2nd Floor",
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80011",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 37,
+                "NUM_STAFFED_BEDS": 37,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.760385,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.82706429999996,
+                "y": 39.727886800000078
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5563,
+                "HOSPITAL_NAME": "Encompass Health Rehabilitation Hospital of Colorado Springs",
+                "HOSPITAL_TYPE": "Rehabilitation Hospital",
+                "HQ_ADDRESS": "325 S Parkside Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80910",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 64,
+                "NUM_STAFFED_BEDS": 62,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5579761,
+                "Potential_Increase_In_Bed_Capac": 2,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.79135269999995,
+                "y": 38.828020300000048
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5591,
+                "HOSPITAL_NAME": "OrthoColorado Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "11650 W 2nd Pl",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Lakewood",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80228",
+                "COUNTY_NAME": "Jefferson",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "059",
+                "FIPS": "08059",
+                "NUM_LICENSED_BEDS": 48,
+                "NUM_STAFFED_BEDS": 48,
+                "NUM_ICU_BEDS": 8,
+                "ADULT_ICU_BEDS": 8,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.308105,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -105.14028399999995,
+                "y": 39.718473900000049
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5743,
+                "HOSPITAL_NAME": "Rocky Mountain Hospital for Children",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2001 N High St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80205",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 279,
+                "NUM_STAFFED_BEDS": 279,
+                "NUM_ICU_BEDS": 49,
+                "ADULT_ICU_BEDS": 49,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.96537319999999,
+                "y": 39.746698000000038
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5761,
+                "HOSPITAL_NAME": "Peak View Behavioral Health",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "7353 Sisters Grv",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80923",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 112,
+                "NUM_STAFFED_BEDS": 112,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.7011008,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.71263369999997,
+                "y": 38.937411900000029
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5789,
+                "HOSPITAL_NAME": "Evans Army Community Hospital",
+                "HOSPITAL_TYPE": "Department of Defense Hospital",
+                "HQ_ADDRESS": "1650 Cochrane Cir",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Fort Carson",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80913",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 92,
+                "NUM_STAFFED_BEDS": 92,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.79691689999999,
+                "y": 38.720429900000056
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5883,
+                "HOSPITAL_NAME": "Wide Horizon",
+                "HOSPITAL_TYPE": "Religious Non-Medical Health Care Institution",
+                "HQ_ADDRESS": "8900 W 38th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Wheat Ridge",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80033",
+                "COUNTY_NAME": "Jefferson",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "059",
+                "FIPS": "08059",
+                "NUM_LICENSED_BEDS": 10,
+                "NUM_STAFFED_BEDS": 10,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.06502732,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -105.09683629999995,
+                "y": 39.769253200000037
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5998,
+                "HOSPITAL_NAME": "Behavioral Health Hospital for Children and Adolescents",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "8140 E 5th Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80230",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 24,
+                "NUM_STAFFED_BEDS": null,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 24,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.89421949999996,
+                "y": 39.72370740000008
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6000,
+                "HOSPITAL_NAME": "Boulder Community Foothills Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "4747 Arapahoe Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Boulder",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80303",
+                "COUNTY_NAME": "Boulder",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "013",
+                "FIPS": "08013",
+                "NUM_LICENSED_BEDS": 167,
+                "NUM_STAFFED_BEDS": 139,
+                "NUM_ICU_BEDS": 18,
+                "ADULT_ICU_BEDS": 18,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4982951,
+                "Potential_Increase_In_Bed_Capac": 28,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.23624879999994,
+                "y": 40.01632440000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6055,
+                "HOSPITAL_NAME": "Castle Rock Adventist Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "2350 Meadows Blvd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Castle Rock",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80109",
+                "COUNTY_NAME": "Douglas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "035",
+                "FIPS": "08035",
+                "NUM_LICENSED_BEDS": 55,
+                "NUM_STAFFED_BEDS": 53,
+                "NUM_ICU_BEDS": 8,
+                "ADULT_ICU_BEDS": 8,
+                "PEDI_ICU_BEDS": 4,
+                "BED_UTILIZATION": 0.5317136,
+                "Potential_Increase_In_Bed_Capac": 2,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.88710679999997,
+                "y": 39.405322000000069
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6061,
+                "HOSPITAL_NAME": "Encompass Health Rehabilitation Hospital of Littleton",
+                "HOSPITAL_TYPE": "Rehabilitation Hospital",
+                "HQ_ADDRESS": "1001 W Mineral Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Littleton",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80120",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 40,
+                "NUM_STAFFED_BEDS": 40,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.8550708,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.99995039999999,
+                "y": 39.57443660000007
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6065,
+                "HOSPITAL_NAME": "Banner Fort Collins Medical Center",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "4700 Lady Moon Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Fort Collins",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80528",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 23,
+                "NUM_STAFFED_BEDS": 23,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.3459202,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.00853229999996,
+                "y": 40.521390000000054
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6125,
+                "HOSPITAL_NAME": "UCHealth Longs Peak Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1750 E Ken Pratt Blvd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Longmont",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80504",
+                "COUNTY_NAME": "Boulder",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "013",
+                "FIPS": "08013",
+                "NUM_LICENSED_BEDS": 51,
+                "NUM_STAFFED_BEDS": 50,
+                "NUM_ICU_BEDS": 6,
+                "ADULT_ICU_BEDS": 6,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.489863,
+                "Potential_Increase_In_Bed_Capac": 1,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -105.06059879999998,
+                "y": 40.161380500000064
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6126,
+                "HOSPITAL_NAME": "VA Eastern Colorado Health Care System - Rocky Mountain Regional VA Medical Center",
+                "HOSPITAL_TYPE": "VA Hospital",
+                "HQ_ADDRESS": "1700 N Wheeling St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80045",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 182,
+                "NUM_STAFFED_BEDS": 182,
+                "NUM_ICU_BEDS": 1,
+                "ADULT_ICU_BEDS": 1,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -104.83797799999996,
+                "y": 39.746099000000072
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6225,
+                "HOSPITAL_NAME": "UCHealth Broomfield Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "11820 Destination Dr",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Broomfield",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80021",
+                "COUNTY_NAME": "Broomfield",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "014",
+                "FIPS": "08014",
+                "NUM_LICENSED_BEDS": 40,
+                "NUM_STAFFED_BEDS": 22,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.286924,
+                "Potential_Increase_In_Bed_Capac": 18,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -105.09145419999999,
+                "y": 39.910378900000069
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6230,
+                "HOSPITAL_NAME": "Denver Springs Hospital",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "8835 American Way",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Englewood",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80112",
+                "COUNTY_NAME": "Douglas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "035",
+                "FIPS": "08035",
+                "NUM_LICENSED_BEDS": 96,
+                "NUM_STAFFED_BEDS": 96,
+                "NUM_ICU_BEDS": 1,
+                "ADULT_ICU_BEDS": 1,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.5682363,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 1
+            },
+            "geometry": {
+                "x": -104.82673569999997,
+                "y": 39.558611300000052
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6234,
+                "HOSPITAL_NAME": "Childrens Hospital Colorado - Colorado Springs",
+                "HOSPITAL_TYPE": "Childrens Hospital",
+                "HQ_ADDRESS": "4090 Briargate Pkwy",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80920",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 99,
+                "NUM_STAFFED_BEDS": null,
+                "NUM_ICU_BEDS": 35,
+                "ADULT_ICU_BEDS": 35,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 99,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.75454349999995,
+                "y": 38.965997600000037
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6239,
+                "HOSPITAL_NAME": "Clear View Behavioral Health",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "4770 Larimer Pkwy",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Johnstown",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80534",
+                "COUNTY_NAME": "Larimer",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "069",
+                "FIPS": "08069",
+                "NUM_LICENSED_BEDS": 92,
+                "NUM_STAFFED_BEDS": 92,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.4837701,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.97530629999994,
+                "y": 40.404528200000073
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6262,
+                "HOSPITAL_NAME": "SCL Health Community Hospital Southwest (AKA Saint Joseph Emergency - Littleton)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "8515 W Coal Mine Ave",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Littleton",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80123",
+                "COUNTY_NAME": "Jefferson",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "059",
+                "FIPS": "08059",
+                "NUM_LICENSED_BEDS": 8,
+                "NUM_STAFFED_BEDS": null,
+                "NUM_ICU_BEDS": 2,
+                "ADULT_ICU_BEDS": 2,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 8,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -105.09236759999999,
+                "y": 39.596023200000047
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6263,
+                "HOSPITAL_NAME": "SCL Health Community Hospital Aurora (AKA Saint Joseph Emergency - Aurora)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "23770 E Smoky Hill Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Aurora",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80016",
+                "COUNTY_NAME": "Arapahoe",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "005",
+                "FIPS": "08005",
+                "NUM_LICENSED_BEDS": 8,
+                "NUM_STAFFED_BEDS": 8,
+                "NUM_ICU_BEDS": 1,
+                "ADULT_ICU_BEDS": 1,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.71244769999998,
+                "y": 39.599410200000079
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6264,
+                "HOSPITAL_NAME": "SCL Health Community Hospital Northglenn (AKA Saint Joseph Emergency - Northglenn)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "11900 Grant St",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Northglenn",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80233",
+                "COUNTY_NAME": "Adams",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "001",
+                "FIPS": "08001",
+                "NUM_LICENSED_BEDS": 8,
+                "NUM_STAFFED_BEDS": 8,
+                "NUM_ICU_BEDS": 1,
+                "ADULT_ICU_BEDS": 1,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.98406569999997,
+                "y": 39.912327100000027
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6283,
+                "HOSPITAL_NAME": "UCHealth Grandview Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "5623 Pulpit Peak Vw",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Colorado Springs",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80918",
+                "COUNTY_NAME": "El Paso",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "041",
+                "FIPS": "08041",
+                "NUM_LICENSED_BEDS": 22,
+                "NUM_STAFFED_BEDS": 22,
+                "NUM_ICU_BEDS": 4,
+                "ADULT_ICU_BEDS": 4,
+                "PEDI_ICU_BEDS": 0,
+                "BED_UTILIZATION": 0.24533,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 2
+            },
+            "geometry": {
+                "x": -104.81687659999994,
+                "y": 38.911021600000026
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6285,
+                "HOSPITAL_NAME": "UCHealth Greeley Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "6767 29th St Rd",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Greeley",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80634",
+                "COUNTY_NAME": "Weld",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "123",
+                "FIPS": "08123",
+                "NUM_LICENSED_BEDS": 50,
+                "NUM_STAFFED_BEDS": null,
+                "NUM_ICU_BEDS": 7,
+                "ADULT_ICU_BEDS": 7,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 50,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.78999119999997,
+                "y": 40.390952200000072
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6288,
+                "HOSPITAL_NAME": "UCHealth Highlands Ranch Hospital",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "1500 Park Central Drive",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Highlands Ranch",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80129",
+                "COUNTY_NAME": "Douglas",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "035",
+                "FIPS": "08035",
+                "NUM_LICENSED_BEDS": 87,
+                "NUM_STAFFED_BEDS": 87,
+                "NUM_ICU_BEDS": 15,
+                "ADULT_ICU_BEDS": 15,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": 3
+            },
+            "geometry": {
+                "x": -104.76574399999998,
+                "y": 39.544576000000063
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6389,
+                "HOSPITAL_NAME": "Eating Recovery Center - Denver",
+                "HOSPITAL_TYPE": "Psychiatric Hospital",
+                "HQ_ADDRESS": "8190 E 1st Ave",
+                "HQ_ADDRESS1": "Suite 105",
+                "HQ_CITY": "Denver",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "80230",
+                "COUNTY_NAME": "Denver",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "031",
+                "FIPS": "08031",
+                "NUM_LICENSED_BEDS": 72,
+                "NUM_STAFFED_BEDS": 24,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 48,
+                "AVG_VENTILATOR_USAGE": 0
+            },
+            "geometry": {
+                "x": -104.89189309999995,
+                "y": 39.722553700000049
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6599,
+                "HOSPITAL_NAME": "PFC James Dunn VA Clinic (AKA Pueblo VA Clinic)",
+                "HOSPITAL_TYPE": "Short Term Acute Care Hospital",
+                "HQ_ADDRESS": "4776 Eagleridge Cir",
+                "HQ_ADDRESS1": null,
+                "HQ_CITY": "Pueblo",
+                "HQ_STATE": "CO",
+                "HQ_ZIP_CODE": "81008",
+                "COUNTY_NAME": "Pueblo",
+                "STATE_NAME": "Colorado",
+                "STATE_FIPS": "08",
+                "CNTY_FIPS": "101",
+                "FIPS": "08101",
+                "NUM_LICENSED_BEDS": null,
+                "NUM_STAFFED_BEDS": null,
+                "NUM_ICU_BEDS": 0,
+                "ADULT_ICU_BEDS": 0,
+                "PEDI_ICU_BEDS": null,
+                "BED_UTILIZATION": null,
+                "Potential_Increase_In_Bed_Capac": 0,
+                "AVG_VENTILATOR_USAGE": null
+            },
+            "geometry": {
+                "x": -104.61935779999999,
+                "y": 38.322948100000076
+            }
+        }
+    ]
+}
