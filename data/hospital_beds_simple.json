@@ -1,4 +1,198 @@
-{   "features": [
+{
+    "objectIdFieldName": "OBJECTID",
+    "uniqueIdField": {
+        "name": "OBJECTID",
+        "isSystemMaintained": true
+    },
+    "globalIdFieldName": "",
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+    },
+    "fields": [
+        {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HOSPITAL_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "Hospital Name",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HOSPITAL_TYPE",
+            "type": "esriFieldTypeString",
+            "alias": "Hospital Type",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_ADDRESS",
+            "type": "esriFieldTypeString",
+            "alias": "Address",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_ADDRESS1",
+            "type": "esriFieldTypeString",
+            "alias": "Address Ln2",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_CITY",
+            "type": "esriFieldTypeString",
+            "alias": "City",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_STATE",
+            "type": "esriFieldTypeString",
+            "alias": "State Abrv",
+            "sqlType": "sqlTypeOther",
+            "length": 1000,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HQ_ZIP_CODE",
+            "type": "esriFieldTypeString",
+            "alias": "Zip Code",
+            "sqlType": "sqlTypeOther",
+            "length": 20,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "COUNTY_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "County Name",
+            "sqlType": "sqlTypeOther",
+            "length": 32,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "STATE_NAME",
+            "type": "esriFieldTypeString",
+            "alias": "State Name",
+            "sqlType": "sqlTypeOther",
+            "length": 35,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "STATE_FIPS",
+            "type": "esriFieldTypeString",
+            "alias": "State FIPS",
+            "sqlType": "sqlTypeOther",
+            "length": 2,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "CNTY_FIPS",
+            "type": "esriFieldTypeString",
+            "alias": "County FIPS",
+            "sqlType": "sqlTypeOther",
+            "length": 3,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "FIPS",
+            "type": "esriFieldTypeString",
+            "alias": "FIPS",
+            "sqlType": "sqlTypeOther",
+            "length": 5,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NUM_LICENSED_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of Licensed Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NUM_STAFFED_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of Staffed Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NUM_ICU_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of ICU Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ADULT_ICU_BEDS",
+            "type": "esriFieldTypeInteger",
+            "alias": "# of Adult ICU Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PEDI_ICU_BEDS",
+            "type": "esriFieldTypeSingle",
+            "alias": "# of Pediatric ICU Beds",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "BED_UTILIZATION",
+            "type": "esriFieldTypeSingle",
+            "alias": "Bed Utilization Rate",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Potential_Increase_In_Bed_Capac",
+            "type": "esriFieldTypeInteger",
+            "alias": "Potential Increase in Bed Capacity",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AVG_VENTILATOR_USAGE",
+            "type": "esriFieldTypeSingle",
+            "alias": "Average Ventilator Usage",
+            "sqlType": "sqlTypeOther",
+            "domain": null,
+            "defaultValue": null
+        }
+    ],
+    "features": [
         {
             "attributes": {
                 "OBJECTID": 585,

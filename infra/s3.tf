@@ -4,12 +4,12 @@ resource "aws_s3_bucket" "data-dump-bucket" {
 
 resource "aws_s3_bucket_object" "hospital" {
   bucket = aws_s3_bucket.data-dump-bucket.bucket
-  key    = "/hospitals/latest_hospital_data.json"
-  source = "../data/hospital_beds.json"
+  key    = "/hospitals/hospital-data.csv"
+  source = "../data/hospital-data.csv"
 }
 
 resource "aws_s3_bucket_object" "covid_data" {
   bucket = aws_s3_bucket.data-dump-bucket.bucket
-  key    = "/covid-data/latest_file_colorado.json"
-  source = "../data/sample_covid_json.json"
+  key    = "/covid-data/covid-data.csv"
+  source = "../data/covid-data.csv"
 }

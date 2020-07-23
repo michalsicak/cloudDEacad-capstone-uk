@@ -1,3 +1,15 @@
+resource "aws_glue_classifier" "capstone_classifier" {
+  name = "capstone_classifier"
+
+  csv_classifier {
+    allow_single_column    = false
+    contains_header        = "PRESENT"
+    delimiter              = ","
+    disable_value_trimming = false
+    quote_symbol           = "'"
+  }
+}
+
 resource "aws_glue_crawler" "crawler1" {
   database_name = aws_athena_database.capstonedb_uk.name
   #"${aws_glue_catalog_database.crawler1.name}"
