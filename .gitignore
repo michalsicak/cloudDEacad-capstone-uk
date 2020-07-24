@@ -1,0 +1,29 @@
+#  Local .terraform directories
+.output
+.terraform
+
+**/secrets/**
+!**/secrets/*.md
+!**/secrets/*sample*
+!**/secrets/*template*
+
+**/.secrets/**
+!**/.secrets/*.md
+!**/.secrets/*sample*
+!**/.secrets/*template*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# tfplan
+tfplan
+
+# .tfvars files
+*.tfvars
+
+# Other (Python)
+__pycache__
+.mypy_cache
+**.pyc
+.ipynb_checkpoints/
