@@ -13,12 +13,12 @@ resource "aws_glue_classifier" "capstone_classifier" {
 resource "aws_glue_crawler" "crawler1" {
   database_name = aws_athena_database.capstonedb_uk.name
   #"${aws_glue_catalog_database.crawler1.name}"
-  name          = "capstone_terraform_crawl_hospitals"
+  name          = "capstone_terraform_crawl_hospital_data"
   role          = aws_iam_role.glue_crawler_role.arn
   classifiers   = ["capstone_classifier"]
-  schedule      = "cron(10 * * * ? *)"
+  schedule      = "cron(0 1 * * ? *)"
   s3_target {
-    path = "s3://${local.name_prefix}data-dump-bucket/hospitals/"
+    path = "s3://${local.name_prefix}data-dump-bucket/hospital-data/"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_glue_crawler" "crawler2" {
   name          = "capstone_terraform_crawl_covid_data"
   role          = aws_iam_role.glue_crawler_role.arn
   classifiers   = ["capstone_classifier"]
-  schedule      = "cron(10 * * * ? *)"
+  schedule      = "cron(0 1 * * ? *)"
   s3_target {
     path = "s3://${local.name_prefix}data-dump-bucket/covid-data/"
   }

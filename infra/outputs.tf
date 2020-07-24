@@ -11,3 +11,4 @@ output capstonedb_uk {
 output python_bucket {
   value       = aws_s3_bucket_object.python_package.key
 }
+
