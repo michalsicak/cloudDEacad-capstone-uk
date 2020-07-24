@@ -26,4 +26,4 @@ tfplan
 __pycache__
 .mypy_cache
 **.pyc
-.ipynb_checkpoints/
+/python_scripts/.ipynb_checkpoints/
