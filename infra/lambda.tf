@@ -17,11 +17,10 @@
     }
   }
 }
-
-resource "aws_lambda_layer_version" "lambda_layer" {
+*/
+resource "aws_lambda_layer_version" "test_lambda_layer" {
   s3_bucket = aws_s3_bucket.data-dump-bucket.bucket
-  s3_key  = aws_s3_bucket_object.python_package.key
+  s3_key  = "python/python.zip"
   layer_name = "transformJSONlayer"
 compatible_runtimes = ["python3.7"]
 }
-*/

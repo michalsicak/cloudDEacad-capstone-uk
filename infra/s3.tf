@@ -17,5 +17,6 @@ resource "aws_s3_bucket_object" "covid_data" {
 resource "aws_s3_bucket_object" "python_package" {
   bucket = aws_s3_bucket.data-dump-bucket.bucket
   key    = "/python/python.zip"
+  #remove initial / from key?
   source = "../python.zip"
 }
