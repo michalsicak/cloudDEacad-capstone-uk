@@ -13,3 +13,9 @@ resource "aws_s3_bucket_object" "covid_data" {
   key    = "/covid-data/covid-data.csv"
   source = "../data/covid-data.csv"
 }
+
+resource "aws_s3_bucket_object" "python_package" {
+  bucket = aws_s3_bucket.data-dump-bucket.bucket
+  key    = "/python/python.zip"
+  source = "../python.zip"
+}

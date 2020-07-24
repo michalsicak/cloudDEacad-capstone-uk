@@ -16,6 +16,7 @@ resource "aws_glue_crawler" "crawler1" {
   name          = "capstone_terraform_crawl_hospitals"
   role          = aws_iam_role.glue_crawler_role.arn
   classifiers   = ["capstone_classifier"]
+  schedule      = "cron(10 * * * ? *)"
   s3_target {
     path = "s3://${local.name_prefix}data-dump-bucket/hospitals/"
   }
@@ -27,6 +28,7 @@ resource "aws_glue_crawler" "crawler2" {
   name          = "capstone_terraform_crawl_covid_data"
   role          = aws_iam_role.glue_crawler_role.arn
   classifiers   = ["capstone_classifier"]
+  schedule      = "cron(10 * * * ? *)"
   s3_target {
     path = "s3://${local.name_prefix}data-dump-bucket/covid-data/"
   }

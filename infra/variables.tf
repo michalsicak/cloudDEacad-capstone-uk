@@ -3,11 +3,6 @@
 #  type        = map
 #}
 
-variable "s3_bucket_name" {
-  description = "bucket name"
-  type        = string
-  default     = "iashganeopwteaowpnt"
-}
 variable "s3_bucket_policy" {
   description = "s3 bucket policy"
   type        = string

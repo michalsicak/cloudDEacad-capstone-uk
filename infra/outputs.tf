@@ -7,3 +7,7 @@ output capstonedb_uk {
   value       = aws_athena_database.capstonedb_uk
   description = "The Athena DB"
 }
+
+output python_bucket {
+  value       = aws_s3_bucket_object.python_package.key
+}
