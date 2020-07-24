@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "data-dump-bucket" {
 
 resource "aws_s3_bucket_object" "hospital" {
   bucket = aws_s3_bucket.data-dump-bucket.bucket
-  key    = "/hospitals/hospital-data.csv"
+  key    = "/hospital-data/hospital-data.csv"
   source = "../data/hospital-data.csv"
 }
 
