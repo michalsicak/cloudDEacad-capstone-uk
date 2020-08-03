@@ -1,5 +1,5 @@
 resource "aws_glue_classifier" "capstone_classifier" {
-  name = "capstone_classifier"
+  name = "${local.name_prefix}capstone_classifier"
 
   csv_classifier {
     allow_single_column    = false
@@ -15,10 +15,10 @@ resource "aws_glue_crawler" "crawler1" {
   #"${aws_glue_catalog_database.crawler1.name}"
   name          = "capstone_terraform_crawl_hospital_data"
   role          = aws_iam_role.glue_crawler_role.arn
-  classifiers   = ["capstone_classifier"]
+  classifiers   = ["${local.name_prefix}capstone_classifier"]
   schedule      = "cron(0 1 * * ? *)"
   s3_target {
-    path = "s3://${local.name_prefix}data-dump-bucket/hospital-data/"
+    path = "s3://${local.name_prefix}-data-dump-bucket/hospital-data/"
   }
 }
 
@@ -27,7 +27,7 @@ resource "aws_glue_crawler" "crawler2" {
   #"${aws_glue_catalog_database.crawler1.name}"
   name          = "capstone_terraform_crawl_covid_data"
   role          = aws_iam_role.glue_crawler_role.arn
-  classifiers   = ["capstone_classifier"]
+  classifiers   = ["${local.name_prefix}capstone_classifier"]
   schedule      = "cron(0 1 * * ? *)"
   s3_target {
     path = "s3://${local.name_prefix}data-dump-bucket/covid-data/"

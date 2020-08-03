@@ -59,7 +59,7 @@ resource "aws_iam_role_policy_attachment" "glue_service_role_attachment" {
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
-  name = "iam_for_lambda"
+  name = "${local.name_prefix}iam_for_lambda"
 
   assume_role_policy = <<EOF
 {
@@ -79,7 +79,7 @@ EOF
 }
 
 resource "aws_iam_policy" "lambda_logging" {
-  name        = "lambda_logging"
+  name        = "${local.name_prefix}lambda_logging"
   path        = "/"
   description = "IAM policy for logging from a lambda"
 
