@@ -2,8 +2,11 @@ resource "aws_s3_bucket" "athena-query-results-bucket" {
   bucket = "${local.name_prefix}athena-query-results-bucket"
 }
 
+#add this to terminal before terraform apply
+#terraform import aws_athena_workgroup.primary primary
+
 resource "aws_athena_workgroup" "primary" {
-  name = "primary-capstone"
+  name = "${local.name_prefix}primary"
 
   configuration {
     enforce_workgroup_configuration    = true

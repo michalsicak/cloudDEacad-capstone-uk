@@ -1,0 +1,32 @@
+import urllib.request as request
+import json
+import time
+import boto3
+
+def lambda_handler(event, context):
+    #call Colorado covid data API and store in a dict
+    with request.urlopen('https://services3.arcgis.com/66aUo8zsujfVXRIT/arcgis/rest/services/Colorado_COVID19_Positive_Cases/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token=') as response:
+        source = response.read()
+        data_dict = json.loads(source)
+    #create a new json file and save contents of API in it
+    timestamp = time.strftime("%Y-%m-%d_%I_%M_%p")
+    file_name = 'covid-data-'+timestamp+'.json'
+    with open('/tmp/'+file_name, 'w') as data_json_file:
+        json.dump(data_dict, data_json_file)
+    with open('/tmp/timestamp_file.txt', 'w') as timestamp_file:
+        timestamp_file.write(timestamp)
+        timestamp_file.close()
+    timestamp_file = open("/tmp/timestamp_file_covid.txt", 'w')
+    timestamp_file.write(timestamp)
+    timestamp_file.close()
+    #save file to terraform-created S3 bucket under raw-zone for further processing
+    s3 = boto3.client('s3')
+    with open('/tmp/'+file_name, "rb") as f:
+        s3.upload_fileobj(f, "capstone-team-uk-data-dump-bucket", "raw-zone/"+file_name)
+    #upload latest timestamp to a file to construct file names for download
+    with open("/tmp/timestamp_file_covid.txt", "rb") as f:
+        s3.upload_fileobj(f, "capstone-team-uk-data-dump-bucket", "raw-zone/timestamp_file_covid.txt")
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
