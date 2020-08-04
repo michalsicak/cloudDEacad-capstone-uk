@@ -3,8 +3,13 @@ output data-dump-bucket {
   description = "The  bucket name"
 }
 
-output capstonedb_uk {
-  value       = aws_athena_database.capstonedb_uk
+output athena_connection {
+  value       = "athena.${local.aws_region}.amazonaws.com"
+  description = "The Athena DB"
+}
+
+output athena_db {
+  value       = aws_athena_database.capstonedb_uk.bucket
   description = "The Athena DB"
 }
 

@@ -41,3 +41,16 @@ resource "aws_s3_bucket_object" "python_transform_script" {
   key    = "/python/python_transform.zip"
   source = "../python_scripts/script_transform.zip"
 }
+
+resource "aws_s3_bucket_notification" "bucket_notification" {
+  bucket = aws_s3_bucket.data-dump-bucket.id
+
+  lambda_function {
+    lambda_function_arn = aws_lambda_function.transform_data_lambda.arn
+    events              = ["s3:ObjectCreated:*"]
+    filter_prefix       = "AWSLogs/"
+    filter_suffix       = ".log"
+  }
+
+  depends_on = [aws_lambda_permission.allow_bucket]
+}
