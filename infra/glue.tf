@@ -28,7 +28,7 @@ resource "aws_glue_crawler" "crawler_covid" {
   name          = "capstone_terraform_crawl_covid_data"
   role          = aws_iam_role.glue_crawler_role.arn
   classifiers   = ["${local.name_prefix}capstone_classifier"]
-  schedule      = "cron(0 1 * * ? *)"
+  schedule      = "cron(0/15 * * * ? *)"
   s3_target {
     path = "s3://${local.name_prefix}data-stage-bucket/covid-data/"
   }
