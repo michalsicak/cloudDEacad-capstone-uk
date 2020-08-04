@@ -27,3 +27,4 @@ __pycache__
 .mypy_cache
 **.pyc
 /python_scripts/.ipynb_checkpoints/
+.vscode/*
