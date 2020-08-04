@@ -29,3 +29,4 @@ __pycache__
 /python_scripts/.ipynb_checkpoints/
 /python_scripts/*.json
 .vscode/settings.json
+.vscode
