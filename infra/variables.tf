@@ -2,7 +2,7 @@
 #  description = "This is a map type for applying tags on resources"
 #  type        = map
 #}
-
+/*
 variable "s3_bucket_policy" {
   description = "s3 bucket policy"
   type        = string
@@ -38,7 +38,7 @@ variable "mfa_delete" {
   description = "To enable/disable MFA delete"
   default     = false
 }
-
+*/
 #variable "glue_database_name" {
 #  description = "Name of the Glue catalog database."
 #  type        = string

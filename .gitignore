@@ -30,3 +30,4 @@ __pycache__
 /python_scripts/*.json
 .vscode/settings.json
 .vscode
+/python_scripts/lambda_layers/
