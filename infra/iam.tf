@@ -110,3 +110,12 @@ resource "aws_iam_role_policy_attachment" "lambda_s3_role_attachment" {
   role       = aws_iam_role.iam_for_lambda.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
 }
+
+#rule to allow eventbridge to trigger lambda to download data via API
+resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_api" {
+  statement_id  = "AllowExecutionFromCloudWatch"
+  action        = "lambda:InvokeFunction"
+  function_name = "${aws_lambda_function.download_api_lambda.function_name}"
+  principal     = "events.amazonaws.com"
+  source_arn    = "${aws_cloudwatch_event_rule.daily_api.arn}"
+}

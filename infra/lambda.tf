@@ -25,6 +25,6 @@ resource "aws_lambda_function" "transform_data_lambda" {
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "script_transform.lambda_handler"
   #the layer seems to load but does not work
-  layers        = [aws_lambda_layer_version.lambda_layer.arn]
+  layers        = [aws_lambda_layer_version.lambda_layer.arn,"arn:aws:lambda:us-west-2:420165488524:layer:AWSLambda-Python37-SciPy1x:20"]
   runtime = "python3.7"
 }
