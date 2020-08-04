@@ -119,3 +119,12 @@ resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_api" {
   principal     = "events.amazonaws.com"
   source_arn    = "${aws_cloudwatch_event_rule.daily_api.arn}"
 }
+
+#rule to allow S3 invoke Lambda
+resource "aws_lambda_permission" "allow_bucket" {
+  statement_id  = "AllowExecutionFromS3Bucket"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.transform_data_lambda.arn
+  principal     = "s3.amazonaws.com"
+  source_arn    = aws_s3_bucket.data-dump-bucket.arn
+}
