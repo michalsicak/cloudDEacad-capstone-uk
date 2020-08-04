@@ -1,7 +1,7 @@
 resource "aws_lambda_layer_version" "lambda_layer" {
-#  filename      = "../python.zip"
-  s3_bucket = aws_s3_bucket.resources-bucket.bucket
-  s3_key  = "python/python.zip"
+  filename      = "../python_scripts/python.zip"
+  #s3_bucket = aws_s3_bucket.resources-bucket.bucket
+  #s3_key  = "python/python.zip"
   layer_name = "${local.name_prefix}transformJSONlayer"
 compatible_runtimes = ["python3.7"]
 }
