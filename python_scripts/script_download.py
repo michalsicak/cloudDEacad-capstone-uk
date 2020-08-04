@@ -20,12 +20,24 @@ def lambda_handler(event, context):
     timestamp_file.write(timestamp)
     timestamp_file.close()
     #save file to terraform-created S3 bucket under raw-zone for further processing
+    #first define an s3 object
     s3 = boto3.client('s3')
+    #then list all buckets
+    bucket_response = s3.list_buckets()
+    buckets = bucket_response["Buckets"]
+    #then find the bucket containing 'data-dump-bucket'
+    correct_bucket = []
+    for i in range(0,len(buckets)):
+        if 'data-dump-bucket' in buckets[i]['Name']:
+            correct_bucket.append(buckets[i]['Name'])
+        else:
+            continue
+    correct_bucket_name = correct_bucket[0]
     with open('/tmp/'+file_name, "rb") as f:
-        s3.upload_fileobj(f, "capstone-team-uk-data-dump-bucket", "raw-zone/"+file_name)
+        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/"+file_name)
     #upload latest timestamp to a file to construct file names for download
     with open("/tmp/timestamp_file_covid.txt", "rb") as f:
-        s3.upload_fileobj(f, "capstone-team-uk-data-dump-bucket", "raw-zone/timestamp_file_covid.txt")
+        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/timestamp_file_covid.txt")
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
