@@ -9,9 +9,14 @@ output capstonedb_uk {
 }
 
 output python_bucket {
-  value       = aws_s3_bucket_object.python_package.key
+  value       = aws_s3_bucket_object.python_package
+  #value       = aws_s3_bucket_object.python_package.key
 }
 
 output lambda_role_arn {
   value       = aws_iam_role.iam_for_lambda.arn
+}
+
+output "lambda_layer" {
+  value       = aws_lambda_layer_version.lambda_layer
 }
