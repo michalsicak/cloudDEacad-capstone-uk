@@ -1,3 +1,9 @@
+variable "script_version" {
+  description = "update to align with python transform script version"
+  type = number
+  default = 6
+}
+
 #variable "common_tags" {
 #  description = "This is a map type for applying tags on resources"
 #  type        = map

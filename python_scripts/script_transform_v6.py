@@ -46,7 +46,7 @@ def lambda_handler(event, context):
     bucket_name_stage = correct_bucket[0]
     #print(bucket_name_stage)
     with open('/tmp/covid-data.csv', "rb") as f:
-        s3_upload.upload_fileobj(f, bucket_name_stage, "covid-data/covid-data"+timestamp+".csv")
+        s3_upload.upload_fileobj(f, bucket_name_stage, "covid-data/covid-data-"+timestamp+".csv")
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')

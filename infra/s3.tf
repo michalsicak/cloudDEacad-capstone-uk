@@ -1,5 +1,13 @@
 resource "aws_s3_bucket" "data-dump-bucket" {
   bucket = "${local.name_prefix}data-dump-bucket"
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        kms_master_key_id = aws_kms_key.capstone_key.arn
+        sse_algorithm     = "aws:kms"
+      }
+    }
+  }
 }
 
 resource "aws_s3_bucket" "resources-bucket" {
@@ -38,8 +46,8 @@ resource "aws_s3_bucket_object" "python_download_script" {
 
 resource "aws_s3_bucket_object" "python_transform_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
-  key    = "python/script_transform_v5.zip"
-  source = "../python_scripts/script_transform_v5.zip"
+  key    = "python/script_transform_v${var.script_version}.zip"
+  source = "../python_scripts/script_transform_v${var.script_version}.zip"
 }
 
 resource "aws_s3_bucket_notification" "bucket_notification" {
