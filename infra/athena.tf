@@ -13,7 +13,8 @@ resource "aws_athena_workgroup" "primary" {
     publish_cloudwatch_metrics_enabled = true
 
     result_configuration {
-      output_location = "s3://${aws_s3_bucket.athena-query-results-bucket.bucket}/query-results/"
+      #remove subfolder - check with other settings
+      output_location = "s3://${aws_s3_bucket.athena-query-results-bucket.bucket}"
 
     }
   }
