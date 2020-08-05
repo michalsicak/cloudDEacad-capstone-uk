@@ -24,7 +24,12 @@ def lambda_handler(event, context):
     new_list_of_dicts = [x['attributes'] for x in json_simple]
     data_f = pd.DataFrame(new_list_of_dicts)
     data_f.index.name = 'id'
-    output_csv = data_f.to_csv('/tmp/covid-data.csv')
+    #filter out non-county values
+    filter_list == ['OUT OF STATE', 'UNKNOWN', 'INTERNATIONAL']
+    #two ways to filter data frames
+    data_f_filter = data_f[~data_f['LABEL'].isin(filter_list)]
+    #data_f_filter_chain = data_f[~data_f.LABEL.isin(filter_list)]
+    output_csv = data_f_filter.to_csv('/tmp/covid-data.csv')
     print(type(output_csv))
     s3_upload = boto3.client('s3')
     #save file to terraform-created S3 bucket under raw-zone for further processing

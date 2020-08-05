@@ -16,13 +16,13 @@ resource "aws_s3_bucket_object" "hospital" {
   key    = "/hospital-data/hospital-data.csv"
   source = "../data/hospital-data.csv"
 }
-*/
+
 resource "aws_s3_bucket_object" "covid_data" {
   bucket = aws_s3_bucket.data-stage-bucket.bucket
   key    = "/covid-data/covid-data_sample.csv"
   source = "../data/covid-data.csv"
 }
-
+*/
 resource "aws_s3_bucket_object" "python_package" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/python.zip"
@@ -38,7 +38,7 @@ resource "aws_s3_bucket_object" "python_download_script" {
 
 resource "aws_s3_bucket_object" "python_transform_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
-  key    = "/python/python_transform.zip"
+  key    = "/python/python_transform*.zip"
   source = "../python_scripts/script_transform.zip"
 }
 
