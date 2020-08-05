@@ -38,8 +38,8 @@ resource "aws_s3_bucket_object" "python_download_script" {
 
 resource "aws_s3_bucket_object" "python_transform_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
-  key    = "python/script_transform_v3.zip"
-  source = "../python_scripts/script_transform_v3.zip"
+  key    = "python/script_transform_v5.zip"
+  source = "../python_scripts/script_transform_v5.zip"
 }
 
 resource "aws_s3_bucket_notification" "bucket_notification" {
