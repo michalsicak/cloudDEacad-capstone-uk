@@ -34,11 +34,11 @@ def lambda_handler(event, context):
             continue
     correct_bucket_name = correct_bucket[0]
     with open('/tmp/'+file_name, "rb") as f:
-        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/"+file_name)
+        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/"+file_name,ExtraArgs={"ServerSideEncryption": "aws:kms"})
     #upload latest timestamp to a file to construct file names for download
     with open("/tmp/timestamp_file_covid.txt", "rb") as f:
-        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/timestamp_file_covid.txt")
+        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/timestamp_file_covid.txt",ExtraArgs={"ServerSideEncryption": "aws:kms"})
     return {
         'statusCode': 200,
-        'body': json.dumps('Hello from Lambda!')
+        'body': json.dumps('the data has been downloaded and stored on S3')
     }

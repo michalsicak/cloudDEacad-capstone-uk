@@ -12,10 +12,26 @@ resource "aws_s3_bucket" "data-dump-bucket" {
 
 resource "aws_s3_bucket" "resources-bucket" {
   bucket = "${local.name_prefix}resources-bucket"
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        kms_master_key_id = aws_kms_key.capstone_key.arn
+        sse_algorithm     = "aws:kms"
+      }
+    }
+  }
 }
 
 resource "aws_s3_bucket" "data-stage-bucket" {
   bucket = "${local.name_prefix}data-stage-bucket"
+  server_side_encryption_configuration {
+  rule {
+    apply_server_side_encryption_by_default {
+      kms_master_key_id = aws_kms_key.capstone_key.arn
+      sse_algorithm     = "aws:kms"
+      }
+    }
+  }
 }
 
 /*not used since hospital data csv errors in glue
