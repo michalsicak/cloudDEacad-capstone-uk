@@ -56,25 +56,50 @@ resource "aws_s3_bucket_object" "python_package" {
 
 resource "aws_s3_bucket_object" "python_download_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
-  key    = "python/script_download.zip"
-  source = "../python_scripts/script_download.zip"
+  key    = "python/script_download_covid.zip"
+  source = "../python_scripts/script_download_covid.zip"
+}
+
+resource "aws_s3_bucket_object" "python_download_hospitals_script" {
+  bucket = aws_s3_bucket.resources-bucket.bucket
+  key    = "python/script_download_hospitals.zip"
+  source = "../python_scripts/script_download_hospitals.zip"
 }
 
 resource "aws_s3_bucket_object" "python_transform_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
-  key    = "python/script_transform_v${var.script_version}.zip"
-  source = "../python_scripts/script_transform_v${var.script_version}.zip"
+  key    = "python/script_transform_covid_v${var.script_version}.zip"
+  source = "../python_scripts/script_transform_covid_v${var.script_version}.zip"
+}
+
+resource "aws_s3_bucket_object" "python_transform_hospitals_script" {
+  bucket = aws_s3_bucket.resources-bucket.bucket
+  key    = "python/script_transform_hospitals.zip"
+  source = "../python_scripts/script_transform_hospitals.zip"
 }
 
 resource "aws_s3_bucket_notification" "bucket_notification" {
   bucket = aws_s3_bucket.data-dump-bucket.id
 
   lambda_function {
-    lambda_function_arn = aws_lambda_function.transform_data_lambda.arn
+    lambda_function_arn = aws_lambda_function.transform_covid_data_lambda.arn
     events              = ["s3:ObjectCreated:*"]
-    filter_prefix       = "raw-zone/"
+    filter_prefix       = "raw-zone/covid-data-"
     filter_suffix       = ".json"
   }
 
   depends_on = [aws_lambda_permission.allow_bucket]
+}
+
+resource "aws_s3_bucket_notification" "bucket_notification_hospitals" {
+  bucket = aws_s3_bucket.data-dump-bucket.id
+
+  lambda_function {
+    lambda_function_arn = aws_lambda_function.transform_hospitals_data_lambda.arn
+    events              = ["s3:ObjectCreated:*"]
+    filter_prefix       = "raw-zone/hospitals-data-"
+    filter_suffix       = ".json"
+  }
+
+  depends_on = [aws_lambda_permission.allow_bucket_hospitals]
 }

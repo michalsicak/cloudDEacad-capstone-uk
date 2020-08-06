@@ -115,16 +115,32 @@ resource "aws_iam_role_policy_attachment" "lambda_s3_role_attachment" {
 resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_api" {
   statement_id  = "AllowExecutionFromCloudWatch"
   action        = "lambda:InvokeFunction"
-  function_name = "${aws_lambda_function.download_api_lambda.function_name}"
+  function_name = "${aws_lambda_function.download_api_covid_lambda.function_name}"
   principal     = "events.amazonaws.com"
   source_arn    = "${aws_cloudwatch_event_rule.daily_api.arn}"
+}
+
+resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_hospitals_api" {
+  statement_id  = "AllowExecutionFromCloudWatch"
+  action        = "lambda:InvokeFunction"
+  function_name = "${aws_lambda_function.download_api_hospitals_lambda.function_name}"
+  principal     = "events.amazonaws.com"
+  source_arn    = "${aws_cloudwatch_event_rule.daily_hospitals_api.arn}"
 }
 
 #rule to allow S3 invoke Lambda
 resource "aws_lambda_permission" "allow_bucket" {
   statement_id  = "AllowExecutionFromS3Bucket"
   action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.transform_data_lambda.arn
+  function_name = aws_lambda_function.transform_covid_data_lambda.arn
+  principal     = "s3.amazonaws.com"
+  source_arn    = aws_s3_bucket.data-dump-bucket.arn
+}
+
+resource "aws_lambda_permission" "allow_bucket_hospitals" {
+  statement_id  = "AllowExecutionFromS3Bucket"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.transform_hospitals_data_lambda.arn
   principal     = "s3.amazonaws.com"
   source_arn    = aws_s3_bucket.data-dump-bucket.arn
 }
