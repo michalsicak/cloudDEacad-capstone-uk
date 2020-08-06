@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     timestamp = body_timestamp.decode()
     #print(timestamp)
     covid_filename = 'covid-data-'+timestamp+'.json'
-    itemname = 'raw-zone/'+covid_filename
+    itemname = 'raw-zone/covid-data/'+covid_filename
     obj = s3_read.Object(bucket_name_dump, itemname)
     body = obj.get()['Body'].read()
     data = json.loads(body)

@@ -30,3 +30,7 @@ output kms_keyid {
   value = aws_kms_key.capstone_key.key_id
 }
 */
+
+output bucket_notification {
+  value = aws_s3_bucket_notification.bucket_notification
+}

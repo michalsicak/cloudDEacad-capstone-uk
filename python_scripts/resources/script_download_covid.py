@@ -16,7 +16,8 @@ def lambda_handler(event, context):
     with open('/tmp/timestamp_file.txt', 'w') as timestamp_file:
         timestamp_file.write(timestamp)
         timestamp_file.close()
-    timestamp_file = open("/tmp/timestamp_file_covid.txt", 'w')
+    timestamp_file_name = "timestamp_file_covid.txt"
+    timestamp_file = open("/tmp/"+timestamp_file_name, 'w')
     timestamp_file.write(timestamp)
     timestamp_file.close()
     #save file to terraform-created S3 bucket under raw-zone for further processing
@@ -34,10 +35,10 @@ def lambda_handler(event, context):
             continue
     correct_bucket_name = correct_bucket[0]
     with open('/tmp/'+file_name, "rb") as f:
-        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/"+file_name,ExtraArgs={"ServerSideEncryption": "aws:kms"})
+        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/covid-data/"+file_name,ExtraArgs={"ServerSideEncryption": "aws:kms"})
     #upload latest timestamp to a file to construct file names for download
-    with open("/tmp/timestamp_file_covid.txt", "rb") as f:
-        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/timestamp_file_covid.txt",ExtraArgs={"ServerSideEncryption": "aws:kms"})
+    with open("/tmp/"+timestamp_file_name, "rb") as f:
+        s3.upload_fileobj(f, correct_bucket_name, "raw-zone/"+timestamp_file_name,ExtraArgs={"ServerSideEncryption": "aws:kms"})
     return {
         'statusCode': 200,
         'body': json.dumps('the data has been downloaded and stored on S3')
