@@ -10,14 +10,14 @@ def lambda_handler(event, context):
         data_dict = json.loads(source)
     #create a new json file and save contents of API in it
     timestamp = time.strftime("%Y-%m-%d_%I_%M_%p")
-    file_name = 'hospitals-data-'+timestamp+'.json'
+    file_name = 'hospital-data-'+timestamp+'.json'
     with open('/tmp/'+file_name, 'w') as data_json_file:
         json.dump(data_dict, data_json_file)
     '''with open('/tmp/timestamp_file.txt', 'w') as timestamp_file:
         timestamp_file.write(timestamp)
         timestamp_file.close()
     '''
-    timestamp_file_name = "timestamp_file_hospitals.txt"
+    timestamp_file_name = "timestamp_file_hospital.txt"
     timestamp_file = open("/tmp/"+timestamp_file_name, 'w')
     timestamp_file.write(timestamp)
     timestamp_file.close()

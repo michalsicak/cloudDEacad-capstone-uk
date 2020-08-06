@@ -9,8 +9,8 @@ resource "aws_glue_classifier" "capstone_classifier" {
     quote_symbol           = "'"
   }
 }
-/*
-resource "aws_glue_crawler" "crawler_hospitals" {
+
+resource "aws_glue_crawler" "crawler_hospital" {
   database_name = aws_athena_database.capstonedb_uk.name
   #"${aws_glue_catalog_database.crawler1.name}"
   name          = "capstone_terraform_crawl_hospital_data"
@@ -18,10 +18,10 @@ resource "aws_glue_crawler" "crawler_hospitals" {
   classifiers   = ["${local.name_prefix}capstone_classifier"]
   schedule      = "cron(0 1 * * ? *)"
   s3_target {
-    path = "s3://${local.name_prefix}data-stage-bucket/hospital-data/"
+    path = "s3://${local.name_prefix}data-stage-bucket/${var.hospital_data}"
   }
 }
-*/
+
 resource "aws_glue_crawler" "crawler_covid" {
   database_name = aws_athena_database.capstonedb_uk.name
   #"${aws_glue_catalog_database.crawler1.name}"
@@ -30,6 +30,6 @@ resource "aws_glue_crawler" "crawler_covid" {
   classifiers   = ["${local.name_prefix}capstone_classifier"]
   schedule      = "cron(0/15 * * * ? *)"
   s3_target {
-    path = "s3://${local.name_prefix}data-stage-bucket/covid-data/"
+    path = "s3://${local.name_prefix}data-stage-bucket/${var.covid_data}"
   }
 }

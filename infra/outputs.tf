@@ -25,11 +25,6 @@ output athena_db {
   value       = "s3://${aws_athena_database.capstonedb_uk.bucket}/"
   description = "The Athena DB"
 }
-/*
-output kms_keyid {
-  value = aws_kms_key.capstone_key.key_id
-}
-*/
 
 output bucket_notification {
   value = aws_s3_bucket_notification.bucket_notification

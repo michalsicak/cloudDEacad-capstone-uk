@@ -120,10 +120,10 @@ resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_api" {
   source_arn    = "${aws_cloudwatch_event_rule.daily_api.arn}"
 }
 
-resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_hospitals_api" {
+resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_hospital_api" {
   statement_id  = "AllowExecutionFromCloudWatch"
   action        = "lambda:InvokeFunction"
-  function_name = "${aws_lambda_function.download_api_hospitals_lambda.function_name}"
+  function_name = "${aws_lambda_function.download_api_hospital_lambda.function_name}"
   principal     = "events.amazonaws.com"
   source_arn    = "${aws_cloudwatch_event_rule.daily_api.arn}"
 }
@@ -137,10 +137,10 @@ resource "aws_lambda_permission" "allow_bucket" {
   source_arn    = aws_s3_bucket.data-dump-bucket.arn
 }
 
-resource "aws_lambda_permission" "allow_bucket_hospitals" {
+resource "aws_lambda_permission" "allow_bucket_hospital" {
   statement_id  = "AllowExecutionFromS3Bucket"
   action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.transform_hospitals_data_lambda.arn
+  function_name = aws_lambda_function.transform_hospital_data_lambda.arn
   principal     = "s3.amazonaws.com"
   source_arn    = aws_s3_bucket.data-dump-bucket.arn
 }

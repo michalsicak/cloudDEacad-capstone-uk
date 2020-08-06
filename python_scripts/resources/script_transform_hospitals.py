@@ -10,13 +10,13 @@ def lambda_handler(event, context):
     #read the timestamd data to combine into a filename to load 
     #print(bucket_name_dump)
     s3_read = boto3.resource('s3')
-    itemname = 'raw-zone/timestamp_file_hospitals.txt'
+    itemname = 'raw-zone/timestamp_file_hospital.txt'
     obj = s3_read.Object(bucket_name_dump, itemname)
     body_timestamp = obj.get()['Body'].read()
     timestamp = body_timestamp.decode()
     #print(timestamp)
-    hospitals_filename = 'hospitals-data-'+timestamp+'.json'
-    itemname = 'raw-zone/hospital-data/'+hospitals_filename
+    hospital_filename = 'hospital-data-'+timestamp+'.json'
+    itemname = 'raw-zone/hospital-data/'+hospital_filename
     obj = s3_read.Object(bucket_name_dump, itemname)
     body = obj.get()['Body'].read()
     data = json.loads(body)
@@ -26,11 +26,11 @@ def lambda_handler(event, context):
     #filter out non-county values
     #filter_list = ['OUT OF STATE', 'UNKNOWN', 'INTERNATIONAL']
     #two ways to filter data frames
-    #need different filtering for hospitals if at all
+    #need different filtering for hospital if at all
     #data_f_filter = data_f[~data_f['LABEL'].isin(filter_list)]
     #data_f_filter_chain = data_f[~data_f.LABEL.isin(filter_list)]
-    #data_f_filter.to_csv('/tmp/hospitals-data.csv',index=False)
-    data_f.to_csv('/tmp/hospitals-data.csv',index=False)
+    #data_f_filter.to_csv('/tmp/hospital-data.csv',index=False)
+    data_f.to_csv('/tmp/hospital-data.csv',index=False)
     s3_upload = boto3.client('s3')
     #save file to terraform-created S3 bucket under raw-zone for further processing
     #first define an s3 object
@@ -47,8 +47,8 @@ def lambda_handler(event, context):
             continue
     bucket_name_stage = correct_bucket[0]
     #print(bucket_name_stage)
-    with open('/tmp/hospitals-data.csv', "rb") as f:
-        s3_upload.upload_fileobj(f, bucket_name_stage, "hospitals-data/hospitals-data-"+timestamp+".csv",ExtraArgs={"ServerSideEncryption": "aws:kms"})
+    with open('/tmp/hospital-data.csv', "rb") as f:
+        s3_upload.upload_fileobj(f, bucket_name_stage, "hospital-data/hospital-data-"+timestamp+".csv",ExtraArgs={"ServerSideEncryption": "aws:kms"})
     return {
         'statusCode': 200,
         'body': json.dumps('the data has been transformed and stored on S3')

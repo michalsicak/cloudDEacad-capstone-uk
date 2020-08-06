@@ -4,6 +4,18 @@ variable "script_version" {
   default = 6
 }
 
+variable "hospital_data" {
+  description = "key to denote hospital data"
+  type = string
+  default = "hospital-data"
+}
+
+variable "covid_data" {
+  description = "key to denote covid data"
+  type = string
+  default = "covid-data"
+}
+
 #variable "common_tags" {
 #  description = "This is a map type for applying tags on resources"
 #  type        = map

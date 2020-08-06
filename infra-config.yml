@@ -1,7 +1,7 @@
 # The 'infra-config.yml' file will be referenced in terraform deployments.
 # TODO: Rename this file to `infra-config.yml`.
 # TODO: Set `project_shortname` to match your project name, excluding special characters.
-project_shortname: capstone-team-uk-demo-14
+project_shortname: capstone-team-uk-demo-18
 aws_region: us-west-2
 resource_tags:
   # TODO: Add any labels which you want to apply to all resources:
