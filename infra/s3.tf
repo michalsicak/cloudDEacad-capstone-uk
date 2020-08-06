@@ -50,6 +50,7 @@ resource "aws_s3_bucket_object" "covid_data" {
 resource "aws_s3_bucket_object" "python_package" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/python.zip"
+  kms_key_id = aws_kms_key.capstone_key.id
   #remove initial / from key?
   source = "../python_scripts/python.zip"
 }
@@ -57,24 +58,28 @@ resource "aws_s3_bucket_object" "python_package" {
 resource "aws_s3_bucket_object" "python_download_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_download_covid.zip"
+  kms_key_id = aws_kms_key.capstone_key.id
   source = "../python_scripts/script_download_covid.zip"
 }
 
 resource "aws_s3_bucket_object" "python_download_hospitals_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_download_hospitals.zip"
+  kms_key_id = aws_kms_key.capstone_key.id
   source = "../python_scripts/script_download_hospitals.zip"
 }
 
 resource "aws_s3_bucket_object" "python_transform_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_transform_covid_v${var.script_version}.zip"
+  kms_key_id = aws_kms_key.capstone_key.id
   source = "../python_scripts/script_transform_covid_v${var.script_version}.zip"
 }
 
 resource "aws_s3_bucket_object" "python_transform_hospitals_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_transform_hospitals.zip"
+  kms_key_id = aws_kms_key.capstone_key.id
   source = "../python_scripts/script_transform_hospitals.zip"
 }
 

@@ -125,7 +125,7 @@ resource "aws_lambda_permission" "allow_cloudwatch_to_call_daily_hospitals_api" 
   action        = "lambda:InvokeFunction"
   function_name = "${aws_lambda_function.download_api_hospitals_lambda.function_name}"
   principal     = "events.amazonaws.com"
-  source_arn    = "${aws_cloudwatch_event_rule.daily_hospitals_api.arn}"
+  source_arn    = "${aws_cloudwatch_event_rule.daily_api.arn}"
 }
 
 #rule to allow S3 invoke Lambda
