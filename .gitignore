@@ -31,3 +31,4 @@ __pycache__
 .vscode/settings.json
 .vscode
 /python_scripts/lambda_layers/
+/proj_mgmt/
