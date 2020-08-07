@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "data-dump-bucket" {
   bucket = "${local.name_prefix}data-dump-bucket"
+  force_destroy = true
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
@@ -12,6 +13,7 @@ resource "aws_s3_bucket" "data-dump-bucket" {
 
 resource "aws_s3_bucket" "resources-bucket" {
   bucket = "${local.name_prefix}resources-bucket"
+  force_destroy = true
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
@@ -24,6 +26,7 @@ resource "aws_s3_bucket" "resources-bucket" {
 
 resource "aws_s3_bucket" "data-stage-bucket" {
   bucket = "${local.name_prefix}data-stage-bucket"
+  force_destroy = true
   server_side_encryption_configuration {
   rule {
     apply_server_side_encryption_by_default {
