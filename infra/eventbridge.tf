@@ -4,6 +4,7 @@ resource "aws_cloudwatch_event_rule" "daily_api" {
   description = "daily download of data via api"
 
   schedule_expression = "cron(0/20 * * * ? *)"
+  tags = var.lab_tags
 }
 /*
 resource "aws_cloudwatch_event_rule" "daily_hospital_api" {

@@ -1,5 +1,6 @@
 resource "aws_iam_role" "glue_crawler_role" {
   name = "${local.name_prefix}GlueCrawlerRole"
+  tags = var.lab_tags
 
 #  tags = var.resource_tags
 
@@ -60,7 +61,7 @@ resource "aws_iam_role_policy_attachment" "glue_service_role_attachment" {
 
 resource "aws_iam_role" "iam_for_lambda" {
   name = "${local.name_prefix}iam_for_lambda"
-
+  tags = var.lab_tags
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",

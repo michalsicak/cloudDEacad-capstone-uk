@@ -16,6 +16,13 @@ variable "covid_data" {
   default = "covid-data"
 }
 
+variable "lab_tags" {
+  default     = {Name = "serverless-data-ms",
+                  Owner = "michal.sicak"}
+  description = "Slalom lab tags"
+  type        = map(string)
+}
+
 #variable "common_tags" {
 #  description = "This is a map type for applying tags on resources"
 #  type        = map

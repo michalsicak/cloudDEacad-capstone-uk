@@ -4,11 +4,12 @@ resource "aws_s3_bucket" "data-dump-bucket" {
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
-        kms_master_key_id = aws_kms_key.capstone_key.arn
+        kms_master_key_id = aws_kms_key.serverless_data.arn
         sse_algorithm     = "aws:kms"
       }
     }
   }
+  tags = var.lab_tags
 }
 
 resource "aws_s3_bucket" "resources-bucket" {
@@ -17,11 +18,12 @@ resource "aws_s3_bucket" "resources-bucket" {
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
-        kms_master_key_id = aws_kms_key.capstone_key.arn
+        kms_master_key_id = aws_kms_key.serverless_data.arn
         sse_algorithm     = "aws:kms"
       }
     }
   }
+  tags = var.lab_tags
 }
 
 resource "aws_s3_bucket" "data-stage-bucket" {
@@ -30,11 +32,12 @@ resource "aws_s3_bucket" "data-stage-bucket" {
   server_side_encryption_configuration {
   rule {
     apply_server_side_encryption_by_default {
-      kms_master_key_id = aws_kms_key.capstone_key.arn
+      kms_master_key_id = aws_kms_key.serverless_data.arn
       sse_algorithm     = "aws:kms"
       }
     }
   }
+  tags = var.lab_tags
 }
 
 /*not used since hospital data csv errors in glue
@@ -53,7 +56,7 @@ resource "aws_s3_bucket_object" "covid_data" {
 resource "aws_s3_bucket_object" "python_package" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/python.zip"
-  kms_key_id = aws_kms_key.capstone_key.arn
+  kms_key_id = aws_kms_key.serverless_data.arn
   #remove initial / from key?
   source = "../python_scripts/resources/python.zip"
 }
@@ -61,28 +64,29 @@ resource "aws_s3_bucket_object" "python_package" {
 resource "aws_s3_bucket_object" "python_download_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_download_covid.zip"
-  kms_key_id = aws_kms_key.capstone_key.arn
+  kms_key_id = aws_kms_key.serverless_data.arn
   source = "../python_scripts/resources/script_download_covid.zip"
+  tags = var.lab_tags
 }
 
 resource "aws_s3_bucket_object" "python_download_hospital_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_download_hospital.zip"
-  kms_key_id = aws_kms_key.capstone_key.arn
+  kms_key_id = aws_kms_key.serverless_data.arn
   source = "../python_scripts/resources/script_download_hospital.zip"
 }
 
 resource "aws_s3_bucket_object" "python_transform_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_transform_covid_v${var.script_version}.zip"
-  kms_key_id = aws_kms_key.capstone_key.arn
+  kms_key_id = aws_kms_key.serverless_data.arn
   source = "../python_scripts/resources/script_transform_covid_v${var.script_version}.zip"
 }
 
 resource "aws_s3_bucket_object" "python_transform_hospital_script" {
   bucket = aws_s3_bucket.resources-bucket.bucket
   key    = "python/script_transform_hospital.zip"
-  kms_key_id = aws_kms_key.capstone_key.arn
+  kms_key_id = aws_kms_key.serverless_data.arn
   source = "../python_scripts/resources/script_transform_hospital.zip"
 }
 

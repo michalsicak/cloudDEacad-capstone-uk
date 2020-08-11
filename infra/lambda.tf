@@ -14,6 +14,7 @@ resource "aws_lambda_function" "download_api_covid_lambda" {
   handler       = "script_download_covid.lambda_handler"
   #layers        = [aws_lambda_layer_version.lambda_layer.arn]
   runtime = "python3.7"
+  tags = var.lab_tags
 }
 
 resource "aws_lambda_function" "download_api_hospital_lambda" {
@@ -24,6 +25,7 @@ resource "aws_lambda_function" "download_api_hospital_lambda" {
   handler       = "script_download_hospital.lambda_handler"
   #layers        = [aws_lambda_layer_version.lambda_layer.arn]
   runtime = "python3.7"
+  tags = var.lab_tags
 }
 
 resource "aws_lambda_function" "transform_covid_data_lambda" {
@@ -34,8 +36,9 @@ resource "aws_lambda_function" "transform_covid_data_lambda" {
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "script_transform_covid_v${var.script_version}.lambda_handler"
   #the layer seems to load but does not work
-  layers        = [aws_lambda_layer_version.lambda_layer.arn,"arn:aws:lambda:us-west-2:420165488524:layer:AWSLambda-Python37-SciPy1x:20"]
+  layers        = [aws_lambda_layer_version.lambda_layer.arn,"arn:aws:lambda:eu-west-1:399891621064:layer:AWSLambda-Python37-SciPy1x:22"]
   runtime = "python3.7"
+  tags = var.lab_tags
 }
 
 resource "aws_lambda_function" "transform_hospital_data_lambda" {
@@ -46,6 +49,7 @@ resource "aws_lambda_function" "transform_hospital_data_lambda" {
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "script_transform_hospital.lambda_handler"
   #the layer seems to load but does not work
-  layers        = [aws_lambda_layer_version.lambda_layer.arn,"arn:aws:lambda:us-west-2:420165488524:layer:AWSLambda-Python37-SciPy1x:20"]
+  layers        = [aws_lambda_layer_version.lambda_layer.arn,"arn:aws:lambda:eu-west-1:399891621064:layer:AWSLambda-Python37-SciPy1x:22"]
   runtime = "python3.7"
+  tags = var.lab_tags
 }
