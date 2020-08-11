@@ -17,6 +17,11 @@ locals {
 provider "aws" {
   version                 = "~> 2.10"
   region                  = local.aws_region
-  shared_credentials_file = local.aws_credentials_file
-  profile                 = "default"
+  #shared_credentials_file = local.aws_credentials_file
+  /*assume_role {
+    role_arn = "arn:aws:iam::216849691610:role/AWS-InnovationLabs-LON-Developer"
+    session_name = "slalom-lab-ms"
+  }
+  */
+  profile                 = "slalom-lab"
 }

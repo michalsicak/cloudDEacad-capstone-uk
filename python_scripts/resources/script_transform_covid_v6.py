@@ -4,20 +4,24 @@ import boto3
 import pandas as pd
 
 def lambda_handler(event, context):
-    #print(event)
-    #print(event['Records'][0]['s3']['bucket']['name'])
+    print(event)
+    print('bucket: ' + event['Records'][0]['s3']['bucket']['name'])
+    print('item: '+ event['Records'][0]['s3']['object']['key'])
     bucket_name_dump = event['Records'][0]['s3']['bucket']['name']
-    #read the timestamd data to combine into a filename to load 
-    #print(bucket_name_dump)
+    item_name_dump = event['Records'][0]['s3']['object']['key'] 
+    #read the timestamp data to combine into a filename to load 
+    print('dump bucket: '+bucket_name_dump)
     s3_read = boto3.resource('s3')
-    itemname = 'raw-zone/timestamp_file_covid.txt'
-    obj = s3_read.Object(bucket_name_dump, itemname)
+    itemname_timestamp = 'raw-zone/timestamp_file_covid.txt'
+    obj = s3_read.Object(bucket_name_dump, itemname_timestamp)
     body_timestamp = obj.get()['Body'].read()
     timestamp = body_timestamp.decode()
-    #print(timestamp)
-    covid_filename = 'covid-data-'+timestamp+'.json'
-    itemname = 'raw-zone/'+covid_filename
-    obj = s3_read.Object(bucket_name_dump, itemname)
+    print('timestamp: '+timestamp)
+    #covid_filename = 'covid-data-'+timestamp+'.json'
+    #itemname = 'raw-zone/covid-data/'+covid_filename
+    print('covid filename: '+item_name_dump)
+    #print('itemname: ' +item_name_dump)
+    obj = s3_read.Object(bucket_name_dump, item_name_dump)
     body = obj.get()['Body'].read()
     data = json.loads(body)
     json_simple = data['features']

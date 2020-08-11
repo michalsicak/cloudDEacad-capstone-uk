@@ -7,17 +7,18 @@ def lambda_handler(event, context):
     #print(event)
     #print(event['Records'][0]['s3']['bucket']['name'])
     bucket_name_dump = event['Records'][0]['s3']['bucket']['name']
+    item_name_dump = event['Records'][0]['s3']['object']['key'] 
     #read the timestamd data to combine into a filename to load 
     #print(bucket_name_dump)
     s3_read = boto3.resource('s3')
-    itemname = 'raw-zone/timestamp_file_hospital.txt'
-    obj = s3_read.Object(bucket_name_dump, itemname)
+    itemname_timestamp = 'raw-zone/timestamp_file_hospital.txt'
+    obj = s3_read.Object(bucket_name_dump, itemname_timestamp)
     body_timestamp = obj.get()['Body'].read()
     timestamp = body_timestamp.decode()
     #print(timestamp)
     hospital_filename = 'hospital-data-'+timestamp+'.json'
-    itemname = 'raw-zone/hospital-data/'+hospital_filename
-    obj = s3_read.Object(bucket_name_dump, itemname)
+    #itemname = 'raw-zone/hospital-data/'+hospital_filename
+    obj = s3_read.Object(bucket_name_dump, item_name_dump)
     body = obj.get()['Body'].read()
     data = json.loads(body)
     json_simple = data['features']
