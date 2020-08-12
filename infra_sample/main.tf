@@ -5,6 +5,7 @@ resource "random_id" "id" {
 resource "aws_s3_bucket" "resources-bucket" {
   bucket = "${local.name_prefix}${random_id.id.hex}-demo-resources-bucket"
   force_destroy = true
+  tags = var.lab_tags
 }
 
 resource "aws_s3_bucket_object" "python_package" {
@@ -14,7 +15,7 @@ resource "aws_s3_bucket_object" "python_package" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "${local.name_prefix}terraform-up-and-running-state"
+  bucket = "${local.name_prefix}${random_id.id.hex}tf-state"
   # Enable versioning so we can see the full revision history of our
   # state files
   versioning {
@@ -28,29 +29,16 @@ resource "aws_s3_bucket" "terraform_state" {
       }
     }
   }
+  tags = var.lab_tags
 }
 
 resource "aws_dynamodb_table" "terraform_locks" {
-  name         = "${local.name_prefix}terraform-up-and-running-locks"
+  name         = "${local.name_prefix}tf-locks"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
   attribute {
     name = "LockID"
     type = "S"
   }
+  tags = var.lab_tags
 }
-
-/*
-terraform {
-  backend "s3" {
-    # Replace this with your bucket name!
-    bucket         = "terraform-up-and-running-state"
-    key            = "global/s3/terraform.tfstate"
-    region         = "us-east-2"
-    # Replace this with your DynamoDB table name!
-    dynamodb_table = "terraform-up-and-running-locks"
-    encrypt        = true
-  }
-}
-
-*/

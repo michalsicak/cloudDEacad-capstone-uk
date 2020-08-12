@@ -1,8 +1,8 @@
 locals {
   root                 = "../.."                       # Path to root of repo
   yaml_config_path     = "../infra-config.yml"         # Required settings
-  secrets_folder       = "../.secrets"                 # Default secrets location
-  aws_credentials_file = "../.secrets/aws-credentials" # AWS Credentials
+  #secrets_folder       = "../.secrets"                 # Default secrets location
+  #aws_credentials_file = "../.secrets/aws-credentials" # AWS Credentials
 }
 
 data "local_file" "config_yml" { filename = local.yaml_config_path }
@@ -17,6 +17,6 @@ locals {
 provider "aws" {
   version                 = "~> 2.10"
   region                  = local.aws_region
-  shared_credentials_file = local.aws_credentials_file
-  profile                 = "default"
+  #shared_credentials_file = local.aws_credentials_file
+  profile                 = "slalom-lab"
 }
