@@ -26,6 +26,18 @@ resource "aws_dynamodb_table" "terraform_locks" {
     type = "S"
   }
 }
+
+terraform {
+  backend "s3" {
+    # Replace this with your bucket name!
+    bucket         = "serverless-demo-ms-terraform-up-and-running-state"
+    key            = "global/s3/terraform.tfstate"
+    region         = "eu-west-1"
+    # Replace this with your DynamoDB table name!
+    dynamodb_table = "terraform-up-and-running-locks"
+    encrypt        = true
+  }
+}
 /*
 resource "aws_s3_bucket" "data-dump-bucket" {
   bucket = "${local.name_prefix}data-dump-bucket"
