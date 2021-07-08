@@ -55,7 +55,7 @@ systemd-python==234
 Twisted==17.9.0
 ufw==0.36
 unattended-upgrades==0.1
-urllib3==1.25.10
+urllib3==1.26.5
 virtualenv==20.0.31
 virtualenv-clone==0.5.4
 zipp==3.2.0
